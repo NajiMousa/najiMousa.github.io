@@ -10,7 +10,7 @@ class Carousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double carouselContainerHeight = MediaQuery.of(context).size.height *
-        (ScreenHelper.isMobile(context) ? .7 : .85);
+        (ScreenHelper.isMobile(context) ? .5 : .70);
     return Container(
       height: carouselContainerHeight,
       width: double.infinity,
@@ -22,9 +22,9 @@ class Carousel extends StatelessWidget {
             child: CarouselSlider(
               // carouselController: carouselController,
               options: CarouselOptions(
-                // autoPlay: true,
+                autoPlay: true,
                 viewportFraction: 1,
-                scrollPhysics: NeverScrollableScrollPhysics(),
+                scrollPhysics: AlwaysScrollableScrollPhysics(),
                 height: carouselContainerHeight,
               ),
               items: List.generate(
@@ -94,9 +94,6 @@ Widget _buildDesktop(BuildContext context, Widget text, Widget image) {
 Widget _buildTablet(BuildContext context, Widget text, Widget image) {
   return Center(
     child: Container(
-      // maxWidth: kTabletMaxWidth,
-      // minWidth: kTabletMaxWidth,
-      // defaultScale: false,
       constraints: BoxConstraints(
         maxWidth: kTabletMaxWidth,
         minWidth: kTabletMaxWidth,

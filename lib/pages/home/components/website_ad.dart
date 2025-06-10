@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 // import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
@@ -84,7 +85,9 @@ class WebsiteAd extends StatelessWidget {
                                 ),
                                 height: 48.0,
                                 padding: EdgeInsets.symmetric(
-                                  horizontal: 28.0,
+                                  horizontal: ScreenHelper.isMobile(context)
+                                      ? 12
+                                      : 28.0,
                                 ),
                                 child: TextButton(
                                   onPressed: () {},
@@ -114,7 +117,10 @@ class WebsiteAd extends StatelessWidget {
                                   ),
                                 ),
                                 height: 48.0,
-                                padding: EdgeInsets.symmetric(horizontal: 28.0),
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: ScreenHelper.isMobile(context)
+                                        ? 12
+                                        : 28.0),
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Center(
@@ -144,7 +150,7 @@ class WebsiteAd extends StatelessWidget {
                   Expanded(
                     flex: constraints.maxWidth > 720.0 ? 1 : 0,
                     child: Image.asset(
-                      "assets/laptop.png",
+                      "assets/nawaWebsite.png",
                       // Set width for image on smaller screen
                       width: constraints.maxWidth > 720.0 ? null : 350.0,
                     ),

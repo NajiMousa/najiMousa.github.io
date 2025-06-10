@@ -34,7 +34,7 @@ class IosAppAd extends StatelessWidget {
                   Expanded(
                     flex: constraints.maxWidth > 720.0 ? 1 : 0,
                     child: Image.asset(
-                      "assets/ios.png",
+                      "assets/spaceApp.png",
                       // Set width for image on smaller screen
                       width: constraints.maxWidth > 720.0 ? null : 350.0,
                     ),
@@ -46,8 +46,8 @@ class IosAppAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "IOS APP",
-                          style: GoogleFonts.oswald(
+                          "SPACE APP",
+                          style: GoogleFonts.ibmPlexSansArabic(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
                             fontSize: 16.0,
@@ -57,8 +57,8 @@ class IosAppAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         Text(
-                          "UNIVERSAL\nSMART HOME APP",
-                          style: GoogleFonts.oswald(
+                          "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
+                          style: GoogleFonts.ibmPlexSansArabic(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
                             height: 1.3,
@@ -69,8 +69,8 @@ class IosAppAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
-                          style: TextStyle(
+                          "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
+                          style: GoogleFonts.ibmPlexSansArabic(
                             color: kCaptionColor,
                             height: 1.5,
                             fontSize: 15.0,
@@ -90,14 +90,14 @@ class IosAppAd extends StatelessWidget {
                                 ),
                                 height: 48.0,
                                 padding: EdgeInsets.symmetric(
-                                  horizontal: 28.0,
+                                  horizontal: ScreenHelper.isMobile(context) ? 12 : 28.0,
                                 ),
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Center(
                                     child: Text(
                                       "EXPLORE MORE",
-                                      style: TextStyle(
+                                      style: GoogleFonts.ibmPlexSansArabic(
                                         color: Colors.white,
                                         fontSize: 13.0,
                                         fontWeight: FontWeight.bold,
@@ -120,13 +120,13 @@ class IosAppAd extends StatelessWidget {
                                   ),
                                 ),
                                 height: 48.0,
-                                padding: EdgeInsets.symmetric(horizontal: 28.0),
+                                padding: EdgeInsets.symmetric(horizontal: ScreenHelper.isMobile(context) ? 12 : 28.0,),
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Center(
                                     child: Text(
                                       "NEXT APP",
-                                      style: TextStyle(
+                                      style: GoogleFonts.ibmPlexSansArabic(
                                         color: kPrimaryColor,
                                         fontSize: 13.0,
                                         fontWeight: FontWeight.bold,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:web_portfolio/pages/home/components/carousel.dart';
 import 'package:web_portfolio/pages/home/components/cv_section.dart';
 import 'package:web_portfolio/pages/home/components/education_section.dart';
@@ -19,11 +20,12 @@ class Home extends StatelessWidget {
     return Scaffold(
       key: Globals.scaffoldKey,
       endDrawer: Drawer(
+        backgroundColor: kBackgroundColor,
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(
-              horizontal: 16.0,
-              vertical: 24.0,
+              horizontal: 16.w,
+              vertical: 24.h,
             ),
             child: ListView.separated(
               itemBuilder: (BuildContext context, int index) {
@@ -33,16 +35,16 @@ class Home extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             color: kDangerColor,
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(8.sp),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 28.0),
+                          padding: EdgeInsets.symmetric(horizontal: 28.w),
                           child: TextButton(
                             onPressed: headerItems[index].onTap,
                             child: Text(
                               headerItems[index].title!,
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 13.0,
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -60,7 +62,7 @@ class Home extends StatelessWidget {
               },
               separatorBuilder: (BuildContext context, int index) {
                 return SizedBox(
-                  height: 10.0,
+                  height: 10.h,
                 );
               },
               itemCount: headerItems.length,

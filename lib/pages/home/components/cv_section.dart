@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:web_portfolio/models/design_process.dart';
@@ -7,29 +8,61 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 final List<DesignProcess> designProcesses = [
   DesignProcess(
-    title: "DESIGN",
-    imagePath: "assets/design.png",
+    title: "RESEARCH",
+    imagePath: "assets/search.svg",
     subtitle:
-    "A full stack allround designer thay may or may not include a guide for specific creative",
+        "Understanding user needs, market trends, and defining the problem.",
+  ),
+  DesignProcess(
+    title: "DESIGN",
+    imagePath: "assets/design.svg",
+    subtitle: "Creating wireframes, UI/UX prototypes, and visual concepts.",
   ),
   DesignProcess(
     title: "DEVELOP",
-    imagePath: "assets/develop.png",
-    subtitle:
-    "A full stack allround developer thay may or may not include a guide for specific creative",
+    imagePath: "assets/coding.svg",
+    subtitle: "Implementing responsive and functional interfaces using code.",
   ),
   DesignProcess(
     title: "WRITE",
-    imagePath: "assets/write.png",
-    subtitle:
-    "A full stack allround writer thay may or may not include a guide for specific creative",
+    imagePath: "assets/write.svg",
+    subtitle: "Crafting content, documentation, and meaningful copy.",
   ),
   DesignProcess(
     title: "PROMOTE",
-    imagePath: "assets/promote.png",
-    subtitle:
-    "A full stack allround promoter thay may or may not include a guide for specific creative",
+    imagePath: "assets/megaphone.svg",
+    subtitle: "Marketing the product, building awareness, and acquiring users.",
   ),
+  DesignProcess(
+    title: "DEPLOY",
+    imagePath: "assets/deploy.svg",
+    subtitle:
+        "Launching the product on app stores or web with stability checks.",
+  ),
+  // DesignProcess(
+  //   title: "DESIGN",
+  //   imagePath: "assets/design.png",
+  //   subtitle:
+  //   "A full stack allround designer thay may or may not include a guide for specific creative",
+  // ),
+  // DesignProcess(
+  //   title: "DEVELOP",
+  //   imagePath: "assets/develop.png",
+  //   subtitle:
+  //   "A full stack allround developer thay may or may not include a guide for specific creative",
+  // ),
+  // DesignProcess(
+  //   title: "WRITE",
+  //   imagePath: "assets/write.png",
+  //   subtitle:
+  //   "A full stack allround writer thay may or may not include a guide for specific creative",
+  // ),
+  // DesignProcess(
+  //   title: "PROMOTE",
+  //   imagePath: "assets/promote.png",
+  //   subtitle:
+  //   "A full stack allround promoter thay may or may not include a guide for specific creative",
+  // ),
 ];
 
 class CvSection extends StatelessWidget {
@@ -62,7 +95,7 @@ class CvSection extends StatelessWidget {
               children: [
                 Text(
                   "BETTER DESIGN,\nBETTER EXPERIENCES",
-                  style: GoogleFonts.oswald(
+                  style: GoogleFonts.ibmPlexSansArabic(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
                     height: 1.8,
@@ -75,7 +108,7 @@ class CvSection extends StatelessWidget {
                     cursor: SystemMouseCursors.click,
                     child: Text(
                       "DOWNLOAD CV",
-                      style: GoogleFonts.oswald(
+                      style: GoogleFonts.ibmPlexSansArabic(
                         color: kPrimaryColor,
                         fontWeight: FontWeight.w900,
                         fontSize: 16.0,
@@ -97,16 +130,20 @@ class CvSection extends StatelessWidget {
                     physics: NeverScrollableScrollPhysics(),
                     alignment: Alignment.topCenter,
                     gridDelegate: ResponsiveGridDelegate(
-                      mainAxisSpacing: 20.0,
+                      mainAxisSpacing: 0,
                       crossAxisSpacing: 20.0,
-                      maxCrossAxisExtent: ScreenHelper.isTablet(context) ||
-                          ScreenHelper.isMobile(context)
+                      maxCrossAxisExtent: ScreenHelper.isMobile(context)
                           ? constraints.maxWidth / 2.0
-                          : 250.0,
+                          : ScreenHelper.isTablet(context)
+                              ? constraints.maxWidth / 3.0
+                              // : 179.0,
+                              : constraints.maxWidth / 3.0,
                       // Hack to adjust child height
-                      childAspectRatio: ScreenHelper.isDesktop(context)
-                          ? 1
-                          : MediaQuery.of(context).size.aspectRatio * 1.5,
+                      childAspectRatio: ScreenHelper.isMobile(context)
+                          ? MediaQuery.of(context).size.aspectRatio * 2.5
+                          : ScreenHelper.isDesktop(context)
+                              ? MediaQuery.of(context).size.aspectRatio * 1.5
+                              : MediaQuery.of(context).size.aspectRatio * 2,
                     ),
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
@@ -116,17 +153,18 @@ class CvSection extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Image.asset(
+                                SvgPicture.asset(
                                   designProcesses[index].imagePath!,
-                                  width: 40.0,
+                                  width: 28.0,
+                                  color: kPrimaryColor,
                                 ),
                                 SizedBox(
                                   width: 15.0,
                                 ),
                                 Text(
                                   designProcesses[index].title!,
-                                  style: GoogleFonts.oswald(
-                                    fontSize: 20.0,
+                                  style: GoogleFonts.ibmPlexSansArabic(
+                                    fontSize: 19.0,
                                     fontWeight: FontWeight.w700,
                                     color: Colors.white,
                                   ),
@@ -138,10 +176,11 @@ class CvSection extends StatelessWidget {
                             ),
                             Text(
                               designProcesses[index].subtitle!,
-                              style: TextStyle(
+                              // textAlign: TextAlign.center,
+                              style: GoogleFonts.ibmPlexSansArabic(
                                 color: kCaptionColor,
                                 height: 1.5,
-                                fontSize: 14.0,
+                                fontSize: 13.0,
                               ),
                             )
                           ],
@@ -156,5 +195,6 @@ class CvSection extends StatelessWidget {
           ],
         ),
       ),
-    );}
+    );
+  }
 }
