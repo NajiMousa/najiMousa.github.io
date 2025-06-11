@@ -5,14 +5,21 @@ import 'package:web_portfolio/pages/home/components/carousel_items.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
-class Carousel extends StatelessWidget {
-  final CarouselController carouselController = CarouselController();
+class Carousel extends StatefulWidget {
+  @override
+  State<Carousel> createState() => _CarouselState();
+}
+
+class _CarouselState extends State<Carousel> {
+  final CarouselSliderController _carouselController = CarouselSliderController();
+  int _currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     double carouselContainerHeight = MediaQuery.of(context).size.height *
         (ScreenHelper.isMobile(context) ? .5 : .70);
     return Container(
-      height: carouselContainerHeight,
+      height: carouselContainerHeight+32,
       width: double.infinity,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -20,12 +27,17 @@ class Carousel extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             child: CarouselSlider(
-              // carouselController: carouselController,
+              carouselController: _carouselController,
               options: CarouselOptions(
                 autoPlay: true,
                 viewportFraction: 1,
                 scrollPhysics: AlwaysScrollableScrollPhysics(),
                 height: carouselContainerHeight,
+                onPageChanged: (index, reason) {
+                  setState(() {
+                    _currentIndex = index;
+                  });
+                },
               ),
               items: List.generate(
                 carouselItems.length,
@@ -58,7 +70,42 @@ class Carousel extends StatelessWidget {
                 ),
               ).toList(),
             ),
-          )
+          ),
+          Wrap(
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 8.0,
+            children: List.generate(carouselItems.length, (index) {
+              const int visibleCount = 2;
+              int halfWindow = visibleCount ~/ 2;
+
+              int start = (_currentIndex - halfWindow).clamp(0, carouselItems.length - visibleCount);
+              int end = (start + visibleCount).clamp(0, carouselItems.length);
+
+              bool isInWindow = index >= start && index < end;
+              bool isActive = index == _currentIndex;
+
+              double width = isActive ? 32 : (isInWindow ? 12 : 6);
+              double height = isInWindow ? 12 : 6;
+              Color color = isActive
+                  ? kPrimaryColor
+                  : (isInWindow ? Colors.grey : Colors.grey.withOpacity(0.3));
+
+              return GestureDetector(
+                onTap: () => _carouselController.animateToPage(index),
+                child: AnimatedContainer(
+                  duration: Duration(milliseconds: 300),
+                  width: width,
+                  height: height,
+                  decoration: BoxDecoration(
+                    color: color,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+              );
+            }),
+          ),
+          SizedBox(height: 20,)
         ],
       ),
     );

@@ -7,28 +7,29 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 final List<Education> educationList = [
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2019 - PRESENT",
+    "Learned advanced business strategies, leadership skills, and project management techniques to enhance organizational growth and personal career development.",
+    linkName: "Master in Business Administration",
+    period: "PRESENT - 2022",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below.This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2018 - 2019",
+    "Worked on Flutter app development and UX design, mastering widget creation, state management, user interface prototyping, and usability testing.",
+    linkName: "Flutter Development & UX Design",
+    period: "2020 - 2022",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2017 - 2018",
+    "Studied software development methodologies, data structures, algorithms, and modern programming languages with hands-on experience in application design.",
+    linkName: "Software Engineering",
+    period: "2016 - 2020",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2016 - 2017",
+    "Focused on mechanical systems, electronics, and automation technologies, gaining skills in robotics, control systems, and embedded programming.",
+    linkName: "Mechatronics Engineering",
+    period: "2014 - 2016",
   ),
+
 ];
 
 class EducationSection extends StatelessWidget {
@@ -56,7 +57,7 @@ class EducationSection extends StatelessWidget {
           children: [
             Text(
               "EDUCATION",
-              style: GoogleFonts.oswald(
+              style: GoogleFonts.ibmPlexSansArabic(
                 color: Colors.white,
                 fontWeight: FontWeight.w900,
                 fontSize: 30.0,
@@ -72,7 +73,7 @@ class EducationSection extends StatelessWidget {
                   constraints: BoxConstraints(maxWidth: 400.0),
                   child: Text(
                     "A full stack all round developer that does all the job he needs to do at all times. Actually this is a false statement",
-                    style: TextStyle(
+                    style: GoogleFonts.ibmPlexSansArabic(
                       color: Colors.white,
                       height: 1.5,
                     ),
@@ -98,7 +99,7 @@ class EducationSection extends StatelessWidget {
                               children: [
                                 Text(
                                   education.period!,
-                                  style: GoogleFonts.oswald(
+                                  style: GoogleFonts.ibmPlexSansArabic(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w700,
                                     fontSize: 20.0,
@@ -111,13 +112,13 @@ class EducationSection extends StatelessWidget {
                                   education.description!,
                                   maxLines: 4,
                                   overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
+                                  style: GoogleFonts.ibmPlexSansArabic(
                                     color: kCaptionColor,
                                     height: 1.5,
                                   ),
                                 ),
                                 SizedBox(
-                                  height: 20.0,
+                                  height: 16.0,
                                 ),
                                 MouseRegion(
                                   cursor: SystemMouseCursors.click,
@@ -125,8 +126,10 @@ class EducationSection extends StatelessWidget {
                                     onTap: () {},
                                     child: Text(
                                       education.linkName!,
-                                      style: TextStyle(
-                                        color: Colors.white,
+                                      style: GoogleFonts.ibmPlexSansArabic(
+                                        fontSize: 16,
+                                        color: kPrimaryColor,
+                                        fontWeight: FontWeight.bold
                                       ),
                                     ),
                                   ),

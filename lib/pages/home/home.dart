@@ -80,7 +80,7 @@ class Home extends StatelessWidget {
               ),
               Carousel(),
               SizedBox(
-                height: 20.0,
+                height: 40.0,
               ),
               CvSection(),
               IosAppAd(),
@@ -88,6 +88,9 @@ class Home extends StatelessWidget {
                 height: 70.0,
               ),
               WebsiteAd(),
+              SizedBox(
+                height: 35.0,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 28.0),
                 child: PortfolioStats(),
@@ -100,15 +103,18 @@ class Home extends StatelessWidget {
                 height: 50.0,
               ),
               SkillSection(),
-              SizedBox(
-                height: 50.0,
-              ),
+              // SizedBox(
+              //   height: 25.0,
+              // ),
               Sponsors(),
-              SizedBox(
-                height: 50.0,
-              ),
+              // SizedBox(
+              //   height: 25.0,
+              // ),
               TestimonialWidget(),
-              Footer(),
+              SizedBox(
+                height: 25.0,
+              ),
+              Container(color: Colors.black.withOpacity(0.1),child: Footer()),
             ],
           ),
         ),

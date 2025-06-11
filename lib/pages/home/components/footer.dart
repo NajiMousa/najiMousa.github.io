@@ -10,26 +10,26 @@ final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/mappin.png",
     title: "ADDRESS",
-    text1: "999 Carter Street",
-    text2: "Sailor Springs, IL 64234",
+    text1: "Gaza Cite",
+    text2: "Palestine State 🇵🇸",
   ),
   FooterItem(
     iconPath: "assets/phone.png",
     title: "PHONE",
-    text1: "+1 618-689-9604",
-    text2: "+1 781-689-9632",
+    text1: "+970 59-519-2140",
+    text2: "+970 59-415-2147",
   ),
   FooterItem(
     iconPath: "assets/email.png",
     title: "EMAIL",
-    text1: "hello@example.com",
-    text2: "info@flutterpanda.com",
+    text1: "ana.naji.1996@gmail.com",
+    text2: "naji.work@gmail.com",
   ),
   FooterItem(
     iconPath: "assets/whatsapp.png",
     title: "WHATSAPP",
-    text1: "+234 901-134-0095",
-    text2: "+234 901-134-0095",
+    text1: "+972 59-519-2140",
+    text2: "+970 59-415-2147",
   )
 ];
 
@@ -60,73 +60,75 @@ Widget _buildUi(double width, BuildContext context) {
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 50.0),
-                child: Wrap(
-                  spacing: 20.0,
-                  runSpacing: 20.0,
-                  children: footerItems
-                      .map(
-                        (footerItem) => Container(
-                          height: 120.0,
-                          width: ScreenHelper.isMobile(context)
-                              ? constraints.maxWidth / 2.0 - 20.0
-                              : constraints.maxWidth / 4.0 - 20.0,
-                          child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Image.asset(
-                                      footerItem.iconPath!,
-                                      width: 25.0,
-                                    ),
-                                    SizedBox(
-                                      width: 15.0,
-                                    ),
-                                    Text(
-                                      footerItem.title!,
-                                      style: GoogleFonts.oswald(
-                                        fontSize: 18.0,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 15.0,
-                                ),
-                                RichText(
-                                  textAlign: TextAlign.start,
-                                  text: TextSpan(
+                child: Center(
+                  child: Wrap(
+                    spacing: 20.0,
+                    runSpacing: 20.0,
+                    children: footerItems
+                        .map(
+                          (footerItem) => Container(
+                            height: 120.0,
+                            width: ScreenHelper.isMobile(context)
+                                ? constraints.maxWidth / 2.0 - 20.0
+                                : constraints.maxWidth / 4.0 - 20.0,
+                            child: Container(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
-                                      TextSpan(
-                                        text: "${footerItem.text1}\n",
-                                        style: TextStyle(
-                                          color: kCaptionColor,
-                                          height: 1.8,
+                                      Image.asset(
+                                        footerItem.iconPath!,
+                                        width: 25.0,
+                                      ),
+                                      SizedBox(
+                                        width: 15.0,
+                                      ),
+                                      Text(
+                                        footerItem.title!,
+                                        style: GoogleFonts.ibmPlexSansArabic(
+                                          fontSize: 18.0,
+                                          fontWeight: FontWeight.w700,
+                                          color: Colors.white,
                                         ),
                                       ),
-                                      TextSpan(
-                                        text: "${footerItem.text2}\n",
-                                        style: TextStyle(
-                                          color: kCaptionColor,
-                                        ),
-                                      )
                                     ],
                                   ),
-                                )
-                              ],
+                                  SizedBox(
+                                    height: 15.0,
+                                  ),
+                                  RichText(
+                                    textAlign: TextAlign.start,
+                                    text: TextSpan(
+                                      children: [
+                                        TextSpan(
+                                          text: "${footerItem.text1}\n",
+                                          style: GoogleFonts.ibmPlexSansArabic(
+                                            color: kCaptionColor,
+                                            height: 1.8,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: "${footerItem.text2}\n",
+                                          style: GoogleFonts.ibmPlexSansArabic(
+                                            color: kCaptionColor,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
-                        ),
-                      )
-                      .toList(),
+                        )
+                        .toList(),
+                  ),
                 ),
               ),
               SizedBox(
-                height: 20.0,
+                height: 10.0,
               ),
               Flex(
                 direction: ScreenHelper.isMobile(context)
@@ -139,8 +141,8 @@ Widget _buildUi(double width, BuildContext context) {
                   Padding(
                     padding: EdgeInsets.only(bottom: 8.0),
                     child: Text(
-                      "Copyright (c) 2021 Michele Harrington. All rights Reserved",
-                      style: TextStyle(
+                      "Copyright (c) 2020-2025 Naji At Abu-Mousa. All rights Reserved",
+                      style: GoogleFonts.ibmPlexSansArabic(
                         color: kCaptionColor,
                       ),
                     ),
@@ -154,7 +156,7 @@ Widget _buildUi(double width, BuildContext context) {
                           cursor: SystemMouseCursors.click,
                           child: Text(
                             "Privacy Policy",
-                            style: TextStyle(
+                            style: GoogleFonts.ibmPlexSansArabic(
                               color: kCaptionColor,
                             ),
                           ),
@@ -164,7 +166,7 @@ Widget _buildUi(double width, BuildContext context) {
                         padding: EdgeInsets.symmetric(horizontal: 8.0),
                         child: Text(
                           "|",
-                          style: TextStyle(
+                          style: GoogleFonts.ibmPlexSansArabic(
                             color: kCaptionColor,
                           ),
                         ),
@@ -175,7 +177,7 @@ Widget _buildUi(double width, BuildContext context) {
                           cursor: SystemMouseCursors.click,
                           child: Text(
                             "Terms & Conditions",
-                            style: TextStyle(
+                            style: GoogleFonts.ibmPlexSansArabic(
                               color: kCaptionColor,
                             ),
                           ),
@@ -184,7 +186,8 @@ Widget _buildUi(double width, BuildContext context) {
                     ],
                   )
                 ],
-              )
+              ),
+              SizedBox(height: 20,)
             ],
           );
         },

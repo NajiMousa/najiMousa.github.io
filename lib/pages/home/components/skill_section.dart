@@ -6,24 +6,46 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 List<Skill> skills = [
   Skill(
-    skill: "Dart",
-    percentage: 62,
-  ),
-  Skill(
-    skill: "Javascript",
+    skill: "UX Research & User Journey",
     percentage: 80,
   ),
   Skill(
-    skill: "PHP",
-    percentage: 78,
+    skill: "UI Design (Figma || Xd)",
+    percentage: 85,
+  ),
+
+  // مهارات Flutter
+  Skill(
+    skill: "Flutter & Dart",
+    percentage: 88,
   ),
   Skill(
-    skill: "Python",
-    percentage: 90,
+    skill: "State Management (Provider / Getx)",
+    percentage: 75,
+  ),
+
+  // مهارات مشتركة
+  Skill(
+    skill: "Responsive & Accessible Design",
+    percentage: 72,
   ),
   Skill(
-    skill: "GoLang",
-    percentage: 40,
+    skill: "API Integration",
+    percentage: 70,
+  ),
+
+  // Soft Skills
+  Skill(
+    skill: "Problem Solving",
+    percentage: 85,
+  ),
+  Skill(
+    skill: "Communication & Teamwork",
+    percentage: 80,
+  ),
+  Skill(
+    skill: "Time Management",
+    percentage: 75,
   ),
 ];
 
@@ -71,7 +93,7 @@ class SkillSection extends StatelessWidget {
                     children: [
                       Text(
                         "SKILLS",
-                        style: GoogleFonts.oswald(
+                        style: GoogleFonts.ibmPlexSansArabic(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
                           fontSize: 28.0,
@@ -82,8 +104,8 @@ class SkillSection extends StatelessWidget {
                         height: 10.0,
                       ),
                       Text(
-                        "This is all the skills listed below more will be added in due time. This is all the skills listed below more will be added in due time.",
-                        style: TextStyle(
+                        "Here’s a humble set of skills I’ve gained through real-world experience in UX design and Flutter development, always aiming to grow and create meaningful digital products.",
+                        style: GoogleFonts.ibmPlexSansArabic(
                           color: kCaptionColor,
                           height: 1.5,
                           fontSize: 16.0,
@@ -105,7 +127,7 @@ class SkillSection extends StatelessWidget {
                                         padding: EdgeInsets.only(left: 10.0),
                                         alignment: Alignment.centerLeft,
                                         height: 38.0,
-                                        child: Text(skill.skill!),
+                                        child: Text(skill.skill!,style: GoogleFonts.ibmPlexSansArabic(),),
                                         color: Colors.white,
                                       ),
                                     ),
@@ -124,7 +146,7 @@ class SkillSection extends StatelessWidget {
                                     ),
                                     Text(
                                       "${skill.percentage}%",
-                                      style: TextStyle(
+                                      style: GoogleFonts.ibmPlexSansArabic(
                                         color: Colors.white,
                                         fontSize: 16.0,
                                       ),
