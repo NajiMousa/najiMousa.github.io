@@ -5,6 +5,8 @@ import 'package:web_portfolio/models/works_carousel_item_model.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
+import '../../disply_pages/app_project_details_page.dart';
+
 class IosAppAd extends StatefulWidget {
   @override
   State<IosAppAd> createState() => _IosAppAdState();
@@ -114,7 +116,7 @@ class _IosAppAdState extends State<IosAppAd> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: 5.0,
+                                        height: 12.0,
                                       ),
                                       Wrap(
                                         spacing: 4.0,
@@ -147,7 +149,14 @@ class _IosAppAdState extends State<IosAppAd> {
                                                 horizontal: ScreenHelper.isMobile(context) ? 12 : 28.0,
                                               ),
                                               child: TextButton(
-                                                onPressed: () {},
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (_) => ProjectDetailsPage(project: applicationItems[index]),
+                                                    ),
+                                                  );
+                                                },
                                                 child: Center(
                                                   child: Text(
                                                     "EXPLORE MORE",
@@ -255,46 +264,39 @@ class _IosAppAdState extends State<IosAppAd> {
       workDescription: "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
     ),
     WorksCarouselItemModel(
-      imagePath: "assets/spaceApp.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "SPACE APP_02",
-      workBio: "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
-      workDescription: "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
+      imagePath: "assets/bookReder.png",
+      skills: ['UX Research', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Figma', 'Typography','Dark Mode Design'	],
+      workName: "BOOK READER APP",
+      workBio: "VERSE FLOW\nA Modern Reading Experience 📚",
+      workDescription: "A sleek and minimal book reader app design focused on user comfort and readability. The interface features adjustable text size, dark/light themes, smooth page transitions, and an elegant bookshelf layout.",
     ),
     WorksCarouselItemModel(
-      imagePath: "assets/spaceApp.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "SPACE APP_03",
-      workBio: "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
-      workDescription: "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
+      imagePath: "assets/ios.png",
+      skills: ['Energy Dashboard', 'Data Visualization', 'UI/UX Design', 'Dark Mode', 'Prototyping', 'Figma'	],
+      workName: "POWER TRACKER APP",
+      workBio: "Powerful Start\nSmart Electricity Load Monitoring ⚡",
+      workDescription: "A modern and intuitive UI design for a smart electricity load tracking app. The design features real-time consumption graphs, device-level monitoring, and customizable alerts for overloads. ",
     ),
     WorksCarouselItemModel(
-      imagePath: "assets/spaceApp.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "SPACE APP_04",
-      workBio: "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
-      workDescription: "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
+      imagePath: "assets/TRADER.png",
+      skills: ['Financial Dashboard', 'Dark Mode UI', 'Stock Charts', 'Figma', 'Prototyping', 'UI/UX Design'	],
+      workName: "TRADER APP",
+      workBio: "SMART & SIMPLE\nStock Trading Platform 📈",
+      workDescription: "A clean, intuitive UI design for a stock trading and portfolio tracking app. The design focuses on real-time market data, interactive charts, watchlists, and seamless navigation — offering both new and experienced traders.",
     ),
     WorksCarouselItemModel(
-      imagePath: "assets/spaceApp.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "SPACE APP_05",
-      workBio: "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
-      workDescription: "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
+      imagePath: "assets/MONEY.png",
+      skills: ['UI/UX Design', 'Government Services UI', 'Figma', 'Arabic RTL Design', 'Accessible Design', 'Data Visualization'	],
+      workName: "PENSION AUTHORITY APP",
+      workBio: "SMART SERVICES\nfor Palestinian Retirees 🇵🇸",
+      workDescription: "A clear and accessible UI design for the Palestinian Pension Authority mobile app. The interface allows retirees to view their monthly pension details, request official documents, track service years, and receive updates from the authority.",
     ),
     WorksCarouselItemModel(
-      imagePath: "assets/spaceApp.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "SPACE APP_06",
-      workBio: "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
-      workDescription: "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
-    ),
-    WorksCarouselItemModel(
-      imagePath: "assets/spaceApp.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "SPACE APP_07",
-      workBio: "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
-      workDescription: "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
+      imagePath: "assets/HAPPY_SEASON.png",
+      skills: ['UI/UX Design', 'Event Booking Flow', 'Clean Layout', 'Elegant Color Palette', 'Arabic RTL Support', 'Prototyping'	],
+      workName: "HAPPY SEASON APP",
+      workBio: "STARTS HERE\nModern Weddings& Event Booking 💍",
+      workDescription: "An elegant and user-friendly UI design for a wedding and event venue booking app. Happy Season helps users explore, compare, and book wedding halls and related services with ease.",
     ),
   ];
 }

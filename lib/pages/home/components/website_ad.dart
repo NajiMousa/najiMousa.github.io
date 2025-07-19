@@ -110,7 +110,7 @@ class _WebsiteAdState extends State<WebsiteAd> {
                                           ),
                                         ),
                                         SizedBox(
-                                          height: 5.0,
+                                          height: 12.0,
                                         ),
                                         Wrap(
                                           spacing: 4.0,
@@ -276,51 +276,51 @@ class _WebsiteAdState extends State<WebsiteAd> {
   final List<WorksCarouselItemModel> WebsiteItems = [
     WorksCarouselItemModel(
       imagePath: "assets/nawaWebsite.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
+      skills: ['UI/UX Design', 'Figma', 'Responsive Web', 'Cultural Theme', 'Nonprofit Design', 'Child-Friendly UI'],
       workName: "NAWA WEBSITE",
-      workBio: "EVOLVING NAGA\nRESORT WEBSITE",
+      workBio: "LITTLE HEARTS\n& DEEP ROOTS",
       workDescription:
-          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
+          "A warm and inviting website UI designed for a nonprofit organization dedicated to preserving cultural heritage and supporting children's development.",
     ),
     WorksCarouselItemModel(
-      imagePath: "assets/nawaWebsite.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "NAWA WEBSITE_02",
-      workBio: "EVOLVING NAGA\nRESORT WEBSITE",
+      imagePath: "assets/constructionLanding.png",
+      skills: ['UI/UX Design', 'Landing Page', 'Responsive Web', 'Figma', 'Hero Sections', 'Corporate Design'],
+      workName: "GLOBAL BUILDERS",
+      workBio: "WORLDWIDE\nCONSTRUCTION",
       workDescription:
-      "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
+      "A modern and professional landing page design for a global construction company. The layout features bold typography, strong visual hierarchy, trust-building elements, and service highlights.",
     ),
     WorksCarouselItemModel(
-      imagePath: "assets/nawaWebsite.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "NAWA WEBSITE_03",
-      workBio: "EVOLVING NAGA\nRESORT WEBSITE",
+      imagePath: "assets/companyDashboardUI.png",
+      skills: ['UI/UX Design', 'Dashboard Layout', 'Figma', 'Data Visualization', 'Responsive Web', 'Dark Mode'],
+      workName: "COMPANY DASHBOARD",
+      workBio: "MODERN & CLEAN\nINTERNAL ADMIN PANEL",
       workDescription:
-      "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
+      "An intuitive and scalable dashboard UI designed for internal company management. The layout includes analytics cards, sidebar navigation, employee management modules, and real-time charts.",
     ),
-    WorksCarouselItemModel(
-      imagePath: "assets/nawaWebsite.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "NAWA WEBSITE_04",
-      workBio: "EVOLVING NAGA\nRESORT WEBSITE",
-      workDescription:
-      "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
-    ),
-    WorksCarouselItemModel(
-      imagePath: "assets/nawaWebsite.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "NAWA WEBSITE_05",
-      workBio: "EVOLVING NAGA\nRESORT WEBSITE",
-      workDescription:
-      "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
-    ),
-    WorksCarouselItemModel(
-      imagePath: "assets/nawaWebsite.png",
-      skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
-      workName: "NAWA WEBSITE_06",
-      workBio: "EVOLVING NAGA\nRESORT WEBSITE",
-      workDescription:
-      "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
-    ),
+    // WorksCarouselItemModel(
+    //   imagePath: "assets/nawaWebsite.png",
+    //   skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
+    //   workName: "NAWA WEBSITE_04",
+    //   workBio: "EVOLVING NAGA\nRESORT WEBSITE",
+    //   workDescription:
+    //   "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
+    // ),
+    // WorksCarouselItemModel(
+    //   imagePath: "assets/nawaWebsite.png",
+    //   skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
+    //   workName: "NAWA WEBSITE_05",
+    //   workBio: "EVOLVING NAGA\nRESORT WEBSITE",
+    //   workDescription:
+    //   "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
+    // ),
+    // WorksCarouselItemModel(
+    //   imagePath: "assets/nawaWebsite.png",
+    //   skills: ['Flutter', 'CarouselSlider', 'Responsive UI', 'State Management', 'LayoutBuilder', 'UX Design'	],
+    //   workName: "NAWA WEBSITE_06",
+    //   workBio: "EVOLVING NAGA\nRESORT WEBSITE",
+    //   workDescription:
+    //   "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough.",
+    // ),
   ];
 }

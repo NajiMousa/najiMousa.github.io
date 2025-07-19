@@ -187,31 +187,38 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
   final List<Testimonial> testimonials = [
     Testimonial(
       text:
-          "This is a testimonial text from Janny Stone. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-      occupation: "Product Designer",
-      personName: "JANNY STONE",
-      profilePhoto: "assets/female.png",
+          "Naji-at is a true professional at what he does and never ceases to amaze me with his beautiful and thoughtful work. I genuinely look forward to working with him again on future projects.",
+      occupation: "Flutter Developer",
+      personName: "AHMED JAMAL",
+      profilePhoto: "assets/ahmedJamal.jpg",
     ),
     Testimonial(
       text:
-          "This is a testimonial text from Ken Williams. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-      occupation: "Art Director",
-      personName: "KEN WILLIAMS",
-      profilePhoto: "assets/male.png",
+          "Working with Naji-at was an absolute pleasure. His attention to detail and creative approach made the entire process smooth and inspiring. Highly recommended!",
+      occupation: "Lead Activator - Nawaculture Org",
+      personName: "DINA BEN-SAEED",
+      profilePhoto: "assets/female01.png",
     ),
     Testimonial(
       text:
-          "Working with Naji was a smooth and professional experience. He truly listened to what I needed and delivered results with great attention to detail. I’d definitely love to collaborate again in the future.",
-      occupation: "UX Designer",
+          "Naji-at consistently delivers beyond expectations. His work speaks for itself — elegant, purposeful, and always on time. Can’t wait to collaborate again.",
+      occupation: "Startup Founder",
       personName: "Layla Al-Mansour",
-      profilePhoto: "assets/female.png",
+      profilePhoto: "assets/female02.jpg",
     ),
     Testimonial(
       text:
-          "Honestly, Naji exceeded my expectations. He combined creativity with a deep understanding of the product and delivered high-quality work in a short time. I highly recommend working with him.",
-      occupation: "Product Manager",
-      personName: "Taha Atiyah",
-      profilePhoto: "assets/male.png",
+          "I’ve worked with many professionals, but Naji-at stands out with his dedication, communication, and design sense. He truly understands what the project needs.",
+      occupation: "Lead Activator IT Specialist",
+      personName: "Taha Atiyah - Nawaculture Org",
+      profilePhoto: "assets/tahaAtyiah.jpg",
+    ),
+    Testimonial(
+      text:
+      "From the first draft to the final delivery, Naji-at was impressive. His designs are not only beautiful but functional. Would definitely work with him again!",
+      occupation: "Student",
+      personName: "AYA MOHAMMED",
+      profilePhoto: "assets/female03.jpg",
     ),
   ];
   Widget testimonialWidgets (Testimonial testimonial){
@@ -237,12 +244,14 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
             SizedBox(
               height: 15.0,
             ),
-            Text(
-              testimonial.text!,
-              style: GoogleFonts
-                  .ibmPlexSansArabic(
-                color: kCaptionColor,
-                height: 1.8,
+            Expanded(
+              child: Text(
+                testimonial.text!,
+                style: GoogleFonts
+                    .ibmPlexSansArabic(
+                  color: kCaptionColor,
+                  height: 1.8,
+                ),
               ),
             ),
             SizedBox(
