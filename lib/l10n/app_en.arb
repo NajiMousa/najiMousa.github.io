@@ -1,0 +1,528 @@
+{
+  "home": "HOME",
+  "services": "SERVICES",
+  "skills": "SKILLS",
+  "education": "EDUCATION",
+  "portfolio": "PORTFOLIO",
+  "testimonials": "TESTIMONIALS",
+  "blogs": "BLOGS",
+  "creativeLab": "CREATIVE-HUB",
+  "hireMe": "CONTACT ME",
+
+  "uxuiProductDesign": "🎨 UXUI PRODUCT DESIGN",
+  "flutterAppDeveloper": "🚀 FLUTTER APP DEVELOPER",
+  "najiAt": "A-NAJI",
+  "abuMousa": "BEN MOUSA",
+  "uxUiDesignerSpecialist": "UX/UI Designer Specialist, based in Palestine  🇵🇸",
+  "flutterFullStackDeveloper": "Flutter Full-stack developer, based in Palestine 🇵🇸",
+  "needCustomWebsiteOrAppDesign": "Need a custom website or app Design?",
+  "needCustomWebsiteOrApp": "Need a custom website or app?",
+  "gotProjectLetsTalk": "Got a project? Let's talk.",
+  "getStarted": "GET STARTED",
+  "betterDesignBetterExperiences": "✨ BETTER DESIGN,\nBETTER EXPERIENCES",
+  "downloadCv": "📄 DOWNLOAD CV",
+
+  "research": "RESEARCH",
+  "researchDescription": "Understanding user needs, market trends, and defining the problem.",
+  "design": "DESIGN",
+  "designDescription": "Creating wireframes, UI/UX prototypes, and visual concepts.",
+  "develop": "DEVELOP",
+  "developDescription": "Implementing responsive and functional interfaces using code.",
+  "write": "WRITE",
+  "writeDescription": "Crafting content, documentation, and meaningful copy.",
+  "promote": "PROMOTE",
+  "promoteDescription": "Marketing the product, building awareness, and acquiring users.",
+  "deploy": "DEPLOY",
+  "deployDescription": "Launching the product on app stores or web with stability checks.",
+
+  "clients": "Clients",
+  "projects": "Projects",
+  "awards": "Awards",
+  "yearsExperience": "Years\nExperience",
+
+  "uxResearchUserJourney": "UX Research & User Journey",
+  "uiDesignFigmaXd": "UI Design (Figma || Xd)",
+  "flutterAndDart": "Flutter & Dart",
+  "stateManagement": "State Management (Provider / Getx)",
+  "responsiveAndAccessibleDesign": "Responsive & Accessible Design",
+  "apiIntegration": "API Integration",
+  "problemSolving": "Problem Solving",
+  "communicationAndTeamwork": "Communication & Teamwork",
+  "timeManagement": "Time Management",
+
+  "mySkillToolbox": "🛠️ MY SKILL TOOLBOX",
+  "mySkillToolboxDescription": "Here’s a set of skills I’ve honed through real-world projects 🌍 — from designing smooth user experiences 🎨 to building functional apps with Flutter 📱. Always learning, always creating ✨.",
+
+  "myLearningJourney": "🎓 MY LEARNING JOURNEY",
+  "myLearningJourneyDescription": "Education has been the foundation 📚, but the real growth came from building, breaking, and rebuilding 💡. Every lesson shaped the way I create today 🚀.",
+
+  "mbaDescription": "Learned advanced business strategies, leadership skills, and project management techniques to enhance organizational growth and personal career development.",
+  "masterInBusinessAdministration": "Master in Business Administration",
+  "mbaPeriod": "2025 - 2022",
+
+  "flutterDevelopmentUxDesign": "Flutter Development & UX Design",
+  "flutterDevelopmentUxDesignDescription": "Worked on Flutter app development and UX design, mastering widget creation, state management, user interface prototyping, and usability testing.",
+  "flutterDevelopmentUxDesignPeriod": "2022 - 2020",
+
+  "softwareEngineering": "Software Engineering",
+  "softwareEngineeringDescription": "Studied software development methodologies, data structures, algorithms, and modern programming languages with hands-on experience in application design.",
+  "softwareEngineeringPeriod": "2020 - 2016",
+
+  "mechatronicsEngineering": "Mechatronics Engineering",
+  "mechatronicsEngineeringDescription": "Focused on mechanical systems, electronics, and automation technologies, gaining skills in robotics, control systems, and embedded programming.",
+  "mechatronicsEngineeringPeriod": "2016 - 2014",
+
+  "projectsBroughtToLife": "🚀 PROJECTS I’VE BROUGHT TO LIFE",
+  "projectsBroughtToLifeDescription": "Each project here 🎨 started as a simple idea 💡 that grew into something real and meaningful ✨. They’re not just designs or apps, but stories I’ve crafted with passion ❤️, time ⏳, and dedication 🙌 — turning visions into experiences.",
+
+  "mobileApps": "Mobile Apps",
+  "mobile": "Mobile",
+  "webProjects": "WebSites & Landing Pages",
+  "web": "Web",
+  "research": "Research",
+  "aiProjects": "AI Projects",
+  "ai": "AI",
+  "flutter": "Flutter",
+  "carouselSlider": "CarouselSlider",
+  "responsiveUi": "Responsive UI",
+  "stateManagementKey": "State Management",
+  "layoutBuilder": "LayoutBuilder",
+  "uxDesign": "UX Design",
+
+  "spaceApp": "SPACE APP",
+  "palestinianMartyrsApp": "FIRST UNIVERSAL\nPalestinian Martyrs App 🇵🇸",
+  "palestinianMartyrsAppDescription": "This app is the first global platform of its kind to commemorate Palestinian martyrs through a digital archive that preserves their faces, biographies, and sacrifices, free from the censorship of algorithms and the limits of platforms.",
+  "uxResearch": "UX Research",
+  "uiUxDesign": "UI/UX Design",
+  "wireframing": "Wireframing",
+  "prototyping": "Prototyping",
+  "figma": "Figma",
+  "typography": "Typography",
+  "darkModeDesign": "Dark Mode Design",
+  "bookReaderApp": "BOOK READER APP",
+
+  "verseFlow": "VERSE FLOW\nA Modern Reading Experience 📚",
+  "bookReaderAppDescription": "A sleek and minimal book reader app design focused on user comfort and readability. The interface features adjustable text size, dark/light themes, smooth page transitions, and an elegant bookshelf layout.",
+  "energyDashboard": "Energy Dashboard",
+  "dataVisualization": "Data Visualization",
+  "darkMode": "Dark Mode",
+
+  "powerTrackerApp": "POWER TRACKER APP",
+  "powerTrackerAppSubtitle": "Powerful Start\nSmart Electricity Load Monitoring ⚡",
+  "powerTrackerAppDescription": "A modern and intuitive UI design for a smart electricity load tracking app. The design features real-time consumption graphs, device-level monitoring, and customizable alerts for overloads.",
+  "financialDashboard": "Financial Dashboard",
+  "stockCharts": "Stock Charts",
+  "exploreMore": "EXPLORE MORE",
+  "next": "NEXT",
+
+  "traderApp": "TRADER APP",
+  "traderAppSubtitle": "SMART & SIMPLE\nStock Trading Platform 📈",
+  "traderAppDescription": "A clean, intuitive UI design for a stock trading and portfolio tracking app. The design focuses on real-time market data, interactive charts, watchlists, and seamless navigation — offering both new and experienced traders.",
+  "governmentServicesUi": "Government Services UI",
+  "arabicRtlDesign": "Arabic RTL Design",
+  "accessibleDesign": "Accessible Design",
+
+  "pensionAuthorityApp": "PENSION AUTHORITY APP",
+  "pensionAuthorityAppSubtitle": "SMART SERVICES\nfor Palestinian Retirees 🇵🇸",
+  "pensionAuthorityAppDescription": "A clear and accessible UI design for the Palestinian Pension Authority mobile app. The interface allows retirees to view their monthly pension details, request official documents, track service years, and receive updates from the authority.",
+  "eventBookingFlow": "Event Booking Flow",
+  "cleanLayout": "Clean Layout",
+  "elegantColorPalette": "Elegant Color Palette",
+
+  "happySeasonApp": "HAPPY SEASON APP",
+  "happySeasonAppSubtitle": "STARTS HERE\nModern Weddings & Event Booking 💍",
+  "happySeasonAppDescription": "An elegant and user-friendly UI design for a wedding and event venue booking app. Happy Season helps users explore, compare, and book wedding halls and related services with ease.",
+  "culturalTheme": "Cultural Theme",
+  "nonprofitDesign": "Nonprofit Design",
+  "childFriendlyUi": "Child-Friendly UI",
+
+  "nawaWebsite": "NAWA WEBSITE",
+  "nawaWebsiteSubtitle": "LITTLE HEARTS\n& DEEP ROOTS",
+  "nawaWebsiteDescription": "A warm and inviting website UI designed for a nonprofit organization dedicated to preserving cultural heritage and supporting children's development.",
+  "landingPage": "Landing Page",
+  "heroSections": "Hero Sections",
+  "corporateDesign": "Corporate Design",
+
+  "globalBuilders": "GLOBAL BUILDERS",
+  "globalBuildersSubtitle": "WORLDWIDE\nCONSTRUCTION",
+  "globalBuildersDescription": "A modern and professional landing page design for a global construction company. The layout features bold typography, strong visual hierarchy, trust-building elements, and service highlights.",
+  "dashboardLayout": "Dashboard Layout",
+
+  "companyDashboard": "COMPANY DASHBOARD",
+  "companyDashboardSubtitle": "MODERN & CLEAN\nINTERNAL ADMIN PANEL",
+  "companyDashboardDescription": "An intuitive and scalable dashboard UI designed for internal company management. The layout includes analytics cards, sidebar navigation, employee management modules, and real-time charts.",
+
+  "testimonials": "TESTIMONIALS",
+  "testimonialsDescriptionA": "Words from amazing people I’ve had the chance to work with 🌟.",
+  "testimonialsDescriptionB": " Their feedback",
+  "testimonialsDescriptionC": " 💌 keeps me inspired to grow, create, and deliver better experiences 🚀.",
+
+  "testimonialAhmedJamal": "Naji-at is a true professional at what he does and never ceases to amaze me with his beautiful and thoughtful work. I genuinely look forward to working with him again on future projects.",
+  "testimonialAhmedJamalRole": "Flutter Developer",
+  "testimonialAhmedJamalCompany": "AHMED JAMAL",
+
+  "testimonialDinaBenSaeed": "Working with Naji-at was an absolute pleasure. His attention to detail and creative approach made the entire process smooth and inspiring. Highly recommended!",
+  "testimonialDinaBenSaeedRole": "Lead Activator - Nawaculture Org",
+  "testimonialDinaBenSaeedCompany": "DINA BEN-SAEED",
+
+  "testimonialLaylaAlMansour": "Naji-at consistently delivers beyond expectations. His work speaks for itself — elegant, purposeful, and always on time. Can’t wait to collaborate again.",
+  "testimonialLaylaAlMansourRole": "Startup Founder",
+  "testimonialLaylaAlMansourCompany": "Layla Al-Mansour",
+
+  "testimonialTahaAtiyah": "I’ve worked with many professionals, but Naji-at stands out with his dedication, communication, and design sense. He truly understands what the project needs.",
+  "testimonialTahaAtiyahRole": "Lead Activator IT Specialist",
+  "testimonialTahaAtiyahCompany": "Taha Atiyah - Nawaculture Org",
+
+  "testimonialAyaMohammed": "From the first draft to the final delivery, Naji-at was impressive. His designs are not only beautiful but functional. Would definitely work with him again!",
+  "testimonialAyaMohammedRole": "Student",
+  "testimonialAyaMohammedCompany": "AYA MOHAMMED",
+
+  "myBlogs": "✍️ MY BLOGS",
+  "myBlogsDescriptionA": "Read my thoughts 💭,",
+  "myBlogsDescriptionB": " stay trendy 🌍. ",
+  "myBlogsDescriptionC": " From lessons learned 📚 to ideas worth sharing 💡, my blog is where creativity meets storytelling 🔥.",
+  "inspiration": "inspiration",
+  "howMuchDoesWebsiteCost": "How Much Does a Website Cost to Build?",
+  "readMore": "Read More",
+  "design": "design",
+  "tenTipsBestPackagingDesign": "10 Tips How Create Best Packaging Design",
+  "creative": "creative",
+  "howGetVisitorsLoveBrand": "How Get Your Visitors Love Your Brand",
+  "blogDateFeb42020": "February 4, 2020",
+
+  "transparentThoughtfulPricing": "💸 TRANSPARENT & THOUGHTFUL PRICING",
+  "transparentThoughtfulPricingDescriptionA": "Quickly estimate the cost of your project ⚡.",
+  "transparentThoughtfulPricingDescriptionB": " I personally review each request 🧑‍💻.",
+  "transparentThoughtfulPricingDescriptionC": " The more details you share, the fairer and more accurate the offer will be 💜.",
+  "startPricingNow": "START PRICING NOW",
+  "projectsQuoted": "Projects Quoted",
+  "customRequests": "Custom Requests",
+  "totalPricingRequests": "Total Pricing Requests",
+
+  "address": "ADDRESS",
+  "gazaCity": "Gaza City",
+  "palestineState": "Palestine State 🇵🇸",
+  "phone": "PHONE",
+  "email": "EMAIL",
+  "whatsapp": "WHATSAPP",
+
+  "copyright": "Copyright (c) 2020-2025 Naji At Abu-Mousa. All rights Reserved",
+  "privacyPolicy": "Privacy Policy",
+  "termsConditions": "Terms & Conditions",
+  "machineLearning": "Machine Learning",
+  "artificialIntelligence": "Artificial Intelligence",
+  "deepLearning": "Deep Learning",
+  "dataVisualization": "Data Visualization",
+  "decisionSupportSystems": "Decision Support Systems",
+  "pythonStreamlit": "Python (Streamlit)",
+
+  "transformerAnalysisWebApp": "Transformer Analysis Web App",
+  "aiPoweredInsights": "AI-Powered Insights \nfor Smarter Decisions🧠",
+  "aiPoweredInsightsDescription": "A web application built with Streamlit that leverages machine learning and AI techniques to analyze data📊, identify patterns💬, and support decision-making🧠. Features include predictive modeling, interactive visualizations, and an intuitive user interface accessible across devices.",
+
+  "dataAnalysis": "Data Analysis",
+  "predictiveModeling": "Predictive Modeling",
+
+  "barriersOfAi": "Barriers of AI in Decision Support",
+  "barriersOfAiSubtitle": "Technical, Human, Organizational, Financial, and External barriers⚙️",
+  "barriersOfAiDescription": "This research highlights key obstacles to AI adoption in decision support systems, covering technical⚙️, human🧠, organizational🏢, financial💰, and external factors🌐 that hinder implementation.",
+
+  "designerChallenge": "🎨 Designer Challenge",
+  "figmaChallenge": "🖌️ Figma Challenge",
+  "flutterChallenge": "🚀 Flutter Challenge",
+
+  "forsaleAppTitle": "forSale | دلّني",
+  "forsaleAppSubtitle": "Life-Sustaining Marketplace in Crisis Zones",
+  "forsaleAppDescription": "A humanitarian-focused mobile marketplace designed for communities under duress, particularly in Gaza. The app organizes the emergent, decentralized economy that arises during displacement—connecting those with surplus essentials (power banks, baby formula, medical supplies) with those in urgent need. Features include verified listings, secure chat, location-based searches, and an offline-first architecture to function in low-connectivity environments.",
+  "realTimeChat": "Real-Time Chat",
+  "geolocation": "Geolocation",
+  "pushNotifications": "Push Notifications",
+  "encryption": "End-to-End Encryption",
+  "offlineFirst": "Offline-First Design",
+  "disasterTech": "Disaster Response Technology",
+
+  "knowledgeRetentionAI": "OrgMind: AI-Powered Institutional Memory",
+  "knowledgeRetentionSubtitle": "Preserving & Operationalizing Employee Expertise",
+  "knowledgeRetentionDescription": "An AI system designed to capture, structure, and operationalize the tacit knowledge of employees within organizations. By analyzing work documents, communication patterns, decision logs, and workflow histories, the system builds a dynamic knowledge graph that survives employee turnover. It enables new hires or remaining teams to query \"how would X have handled this?\" and receive AI-generated guidance based on captured expertise—mitigating knowledge loss from attrition, layoffs, or crisis scenarios.",
+  "knowledgeGraphs": "Knowledge Graphs",
+  "nlp": "Natural Language Processing",
+  "documentAnalysis": "Document Analysis",
+  "workflowMining": "Workflow Mining",
+  "llmFineTuning": "LLM Fine-Tuning",
+  "organizationalMemory": "Organizational Memory Systems",
+
+  "higherEdWarResearchTitle": "Digital Scaffolding: Rebuilding Higher Education in Post-War Gaza",
+  "higherEdWarResearchSubtitle": "A Hybrid Tech-Humanities Framework",
+  "higherEdWarResearchDescription": "Academic research investigating how blended digital-humanities approaches can reconstruct Gaza's devastated higher education ecosystem. The study proposes a \"Digital Scaffolding\" model combining: 1) decentralized digital platforms for course delivery, 2) AI-curated open educational resources (OER) in Arabic, 3) blockchain-verified micro-credentials for displaced students, and 4) virtual research collaboration networks with international institutions. This framework addresses immediate educational continuity while building long-term, war-resilient academic infrastructure.",
+  "qualitativeResearch": "Qualitative Research",
+  "caseStudyAnalysis": "Case Study Analysis",
+  "higherEdPolicy": "Higher Education Policy",
+  "crisisInformatics": "Crisis Informatics",
+  "mixedMethods": "Mixed-Methods Research",
+
+  "firebase": "Firebase",
+  "python": "Python",
+  "streamlit": "Streamlit",
+  "academicWriting": "Academic Writing",
+
+  "inspiration": "Inspiration",
+  "fromIdeaToAppStore": "From Idea to App Store: The Journey of Building Your First Successful Flutter App",
+  "blogDateMar152024": "March 15, 2024",
+  "makingAppLovable": "How to Make Your App 'Lovable': 5 Psychological Principles in UX Design",
+  "blogDateApr22024": "April 2, 2024",
+  "hiddenAppCost": "What Developers Don't Talk About: The Hidden Cost of Building a Mobile App",
+  "blogDateMay102024": "May 10, 2024",
+  "beautyVsPerformance": "Between Beauty and Performance: How to Balance in Flutter Apps",
+  "blogDateJun52024": "June 5, 2024",
+  "designSystemGuide": "More Than Buttons: A Guide to Building a Complete Design System in Flutter",
+  "blogDateJul182024": "July 18, 2024",
+  "readMore": "Read More",
+  "performance": "Performance",
+  "appBusiness": "App Business",
+  "productJourney": "Product Journey",
+
+  "projectCostEstimator": "Project Cost Estimator",
+    "projectCostEstimatorSubtitle": "Turn your idea into numbers before investing a single dollar 💡",
+    "projectCostEstimatorDescription": "Select your project requirements and get an instant estimate with smart suggestions ✨",
+
+    "noCommitment": "❌ No commitment",
+    "approximatePricing": "💰 Approximate pricing",
+    "requestDetailedStudy": "📊 Request a detailed study",
+
+    "backStep": "Back Step",
+    "nextStep": "Next Step",
+
+    "validationSelectService": "Please select a service first",
+    "validationSelectPlatform": "Please select at least one platform",
+
+    "whatKindOfHelp": "What kind of help are you looking for?",
+    "multipleOptionsHint": "You can choose more than one option",
+
+    "serviceDesignTitle": "Design 🎨",
+    "serviceDesignSubtitle": "UI/UX, wireframes, branding",
+
+    "serviceDevelopmentTitle": "Development 💻",
+    "serviceDevelopmentSubtitle": "I already have the design",
+
+    "whatDoYouWantToBuild": "What do you want to build?",
+    "buildExamples": "You can choose more than one option 👇\nFor example: Mobile App + Website",
+
+    "platformMobileApp": "Mobile App 📱",
+    "platformMobileAppSubtitle": "iOS, Android, or both",
+
+    "platformWebsite": "Website 🌍",
+    "platformWebsiteSubtitle": "Landing page or full platform",
+
+    "platformAdminDashboard": "Admin Dashboard 🧩",
+    "platformAdminDashboardSubtitle": "Manage users, content & data",
+
+    "featuresTitle": "What features do you need?",
+    "featuresSubtitle": "Select everything your idea needs – you can always refine it later ✨",
+
+    "featureDarkMode": "Dark Mode 🌙",
+    "featureDarkModeSubtitle": "Allow users to switch between light and dark theme",
+
+    "featureChat": "Chat 💬",
+    "featureChatSubtitle": "Real-time messaging between users",
+
+    "featureMultiLanguage": "Multi-language 🌍",
+    "featureMultiLanguageSubtitle": "Support multiple languages",
+
+    "featureOnlinePayments": "Online Payments 💳",
+    "featureOnlinePaymentsSubtitle": "Accept payments securely",
+
+    "featureAi": "AI Features 🤖",
+    "featureAiSubtitle": "Smart recommendations or automation",
+
+    "featureNotifications": "Notifications 🔔",
+    "featureNotificationsSubtitle": "Push or in-app notifications",
+
+    "featureAnalytics": "Analytics & Reporting 📊",
+    "featureAnalyticsSubtitle": "Track user behavior and metrics",
+
+    "featureSearchFiltering": "Search / Filtering 🔍",
+    "featureAuthentication": "User Authentication 🔑",
+
+    "featureOfflineMode": "Offline Mode 🌐",
+    "featureGeolocation": "Geolocation 📍",
+    "featureSocialIntegration": "Social Media Integration 📱",
+    "featureFileUpload": "File Upload / Download 📁",
+    "featureCalendar": "Calendar / Scheduling 📅",
+    "featureChatbot": "Chatbot / FAQ 🤖",
+    "featureStreaming": "Audio / Video Streaming 🎥",
+    "featureEcommerceCart": "E-commerce Cart 🛒",
+    "featureApiIntegration": "API Integration 🌐",
+
+    "deliverablesTitle": "What deliverables do you expect?",
+
+    "deliverableUxResearch": "UX Research Document 📋",
+    "deliverableStyleGuide": "Style Guide 🎨",
+    "deliverableMockups": "Mockups 🖼️",
+    "deliverableWireframes": "Wireframes / Mockups 📝",
+    "deliverableUiDesign": "UI Design 🎨",
+    "deliverablePrototypes": "Prototypes 🔗",
+    "deliverableSourceCode": "Source Code Handover 🖥️",
+    "deliverableDocumentation": "Documentation / Guides 📄",
+    "deliverableDeployment": "Deployment Setup ⚙️",
+    "deliverableTesting": "Testing / QA Reports 🧪",
+    "deliverableAdminPanel": "Admin Panel Config 🧩",
+    "deliverableLandingPage": "Landing Page Copy & Layout 🏷️",
+    "deliverableDevStyleGuide": "Style Guide for Developers 🖌️",
+
+    "projectQualityLevel": "Project Quality Level",
+
+    "qualityMvp": "MVP – Proof of Concept 💡",
+    "qualityStandard": "Standard 🔧",
+    "qualityPremium": "Premium – Ready to Launch 🚀",
+
+    "finalEstimatedCost": "Final Estimated Cost",
+    "estimatedCost": "Estimated Cost",
+    "total": "Total:",
+
+    "recommendedUpgrades": "Recommended upgrades for your project 🚀",
+
+    "continueOnWhatsapp": "Continue on WhatsApp",
+    "whatsappHint": "Takes less than 2 minutes · No commitment",
+
+    "featureAdminDashboard": "Admin Dashboard 🧩",
+    "featureAdminDashboardSubtitle": "Manage users, content & settings",
+
+    "featureFormsSurveys": "Forms & Surveys 📝",
+    "featureFormsSurveysSubtitle": "Collect user input",
+
+    "featureSearchFilteringSubtitle": "Find and filter content",
+
+    "featureAuthenticationSubtitle": "Login, signup & social login",
+
+    "featureSocialIntegrationSubtitle": "Connect with social platforms",
+
+    "featureOfflineModeSubtitle": "Access features without internet",
+
+    "featureGeolocationSubtitle": "Track user location",
+
+    "featureFileUploadSubtitle": "Upload and download files",
+
+    "featureCalendarSubtitle": "Manage events and schedules",
+
+    "featureChatbotSubtitle": "Automated assistance or FAQs",
+
+    "featureStreamingSubtitle": "Stream audio or video content",
+
+    "featureEcommerceCartSubtitle": "Shopping cart & checkout",
+
+    "featureApiIntegrationSubtitle": "Connect to third-party APIs",
+
+    "deliverablesSelectionTitle": "Select everything you want to receive at the end of the project ✨",
+
+    "deliverableUxResearchSubtitle": "User research, surveys, and personas",
+
+    "deliverableStyleGuideSubtitle": "Brand colors, fonts, and design rules",
+
+    "deliverableMockupsSubtitle": "High-fidelity visual representation of screens",
+
+    "deliverableWireframesSubtitle": "Low-fidelity layout and flow of the app",
+
+    "deliverableUiDesignSubtitle": "Design of user interface elements",
+
+    "deliverablePrototypesSubtitle": "Clickable or interactive demo of the design",
+
+    "deliverableSourceCodeSubtitle": "Full code handover for the project",
+
+    "deliverableDocumentationSubtitle": "User manuals, API docs, technical guides",
+
+    "deliverableDeploymentSubtitle": "Ready-to-deploy package or instructions",
+
+    "deliverableTestingSubtitle": "Functional and performance testing results",
+
+    "deliverableAdminPanelSubtitle": "Setup of roles, permissions, and dashboard",
+
+    "deliverableLandingPageSubtitle": "Content, images, and structure for landing pages",
+
+    "deliverableDevStyleGuideSubtitle": "Reference guide for implementing UI in code",
+
+    "qualityMvpSubtitle": "Essential features only, basic deliverables",
+
+    "qualityStandardSubtitle": "Balanced features and deliverables, partial enhancements",
+
+    "qualityPremiumSubtitle": "All selected features + full deliverables + extra polish",
+
+    "currencyUsd": "USD",
+
+    "finalEstimateDescription": "This is the final estimate based on all your selections",
+    "priceAutoUpdateHint": "Price updates automatically as you choose options",
+
+    "needPreciseEstimate": "Need a precise estimate & execution plan?",
+    "preciseEstimateDescription": "Based on your selections, we can prepare a detailed scope, timeline, and final pricing — tailored exactly to your idea.",
+
+    "recommendedUpgradesDescription": "Based on your current selections, these additions can increase value and impact.",
+    "chooseProjectQualityLevelHint": "Choose the level that matches your project needs",
+
+    "upgradeAiChatbotTitle": "AI Chatbot Assistant 🤖",
+      "upgradeAiChatbotSubtitle": "Automate replies, support users 24/7, and reduce manual support.",
+
+      "upgradeSmartNotificationsTitle": "Smart Notifications 🔔",
+      "upgradeSmartNotificationsSubtitle": "Increase engagement with push and in-app notifications.",
+
+      "upgradeAnalyticsTitle": "Analytics & Reporting 📊",
+      "upgradeAnalyticsSubtitle": "Understand user behavior and improve decision-making.",
+
+      "upgradeAdvancedSearchTitle": "Advanced Search & Filtering 🔍",
+      "upgradeAdvancedSearchSubtitle": "Help users find content faster with smart filtering.",
+
+      "upgradeOfflineModeTitle": "Offline Mode 🌐",
+      "upgradeOfflineModeSubtitle": "Allow users to access core features without internet.",
+
+      "upgradeMultiLanguageTitle": "Multi-language Support 🌍",
+      "upgradeMultiLanguageSubtitle": "Reach more users by supporting multiple languages.",
+
+      "upgradeOnlinePaymentsTitle": "Online Payments 💳",
+      "upgradeOnlinePaymentsSubtitle": "Accept secure payments directly inside your product.",
+
+
+      "blogProductJourney": "Product Journey",
+      "blogUxDesign": "UX Design",
+      "blogAppBusiness": "App Business",
+      "blogPerformance": "Performance",
+      "blogFlutter": "Flutter",
+      "readMore": "Read More",
+
+      "blogIdeaToAppTitle": "From Idea to App",
+      "blogIdeaToAppDate": "March 12, 2024",
+      "blogIdeaToAppSummary": "A practical walkthrough of turning a raw idea into a real, scalable app. Learn how to validate your concept, define your MVP, and avoid the most common early-stage mistakes.",
+      "blogIdeaToAppContent": "Turning a raw idea into a functional app requires clear planning, validation, and execution. Many early-stage startups fail because they jump into development without understanding their users or prioritizing features.\n\n1. Idea Validation:\nStart by researching your target market, understanding user pain points, and testing the core concept. Conduct surveys, interviews, and gather feedback before writing a single line of code.\n\n2. Defining the MVP:\nIdentify the minimum set of features needed to solve the user problem. Avoid overbuilding — focus on the core functionality that delivers value and can be tested quickly.\n\n3. Design & User Experience:\nCreate wireframes and low-fidelity mockups to outline the user flow. Iterate based on user feedback to ensure usability and engagement.\n\n4. Development & Testing:\nBuild the MVP using the most appropriate technology stack. Test early and often, fixing bugs and refining features based on real user interactions.\n\n5. Launch & Iterate:\nDeploy the app to a small group or pilot audience. Monitor usage, collect analytics, and plan improvements for subsequent releases.\n\nConclusion:\nBy following a structured approach from idea validation to MVP launch, teams can reduce risk, save resources, and create apps that solve real problems while being scalable for future growth.",
+
+      "blogUxPsychologyTitle": "UX Psychology Basics",
+      "blogUxPsychologyDate": "April 2, 2024",
+      "blogUxPsychologySummary": "An introduction to the psychology behind great user experiences. Understand how users think, decide, and react — and how design choices directly affect engagement and retention.",
+      "blogUxPsychologyContent": "Understanding UX psychology is crucial for creating digital products that users not only use but enjoy. At its core, UX psychology explores how people perceive, interpret, and respond to interfaces, interactions, and information. By applying these principles, designers can predict user behavior and craft experiences that feel intuitive and satisfying.\n\n1. Cognitive Load:\nHumans have limited mental resources. Interfaces that are cluttered or require too many steps overwhelm users, leading to frustration or abandonment. To reduce cognitive load, designers should prioritize simplicity, clear visual hierarchy, and minimal decision points. Breaking complex tasks into smaller, digestible steps helps users complete actions efficiently.\n\n2. Visual Hierarchy:\nVisual hierarchy guides users’ attention to the most important elements. Using size, color, contrast, and placement strategically ensures users understand what to focus on first. For example, call-to-action buttons should stand out clearly, while secondary information should be visually subdued.\n\n3. Consistency & Familiarity:\nPeople rely on patterns they recognize. Consistent layouts, familiar icons, and standard interactions reduce learning curves and make users feel confident navigating your product. Inconsistent design forces users to relearn interactions, which can lead to errors or disengagement.\n\n4. Feedback & Affordances:\nUsers need clear indications of how their actions affect the system. Buttons should provide visual feedback on tap, forms should highlight errors clearly, and interactive elements should signal their behavior. Feedback reassures users, reinforces correct actions, and reduces mistakes.\n\n5. Emotional Design:\nUX psychology isn’t only about efficiency — emotions play a critical role. Pleasant visuals, micro-interactions, and subtle animations can create positive emotional responses, increasing engagement and retention. Conversely, frustrating or confusing experiences generate negative emotions and discourage continued use.\n\n6. Behavioral Triggers & Motivation:\nUnderstanding what motivates users enables designers to create experiences that encourage desired actions. This includes reward systems, notifications, and progress indicators that guide users without feeling manipulative. Behavioral psychology concepts such as habit formation and loss aversion can inform design decisions.\n\n7. Accessibility & Inclusivity:\nDesign must account for diverse cognitive and sensory abilities. Colors, fonts, contrast ratios, and alternative text for images ensure all users can interact successfully. Inclusive design enhances user satisfaction and broadens the potential audience.\n\nConclusion:\nUX psychology provides the framework for designing products that align with human behavior. By understanding cognitive processes, emotional responses, and behavioral tendencies, designers can create intuitive, engaging, and effective experiences. Good UX is invisible when it works seamlessly, but it is deeply appreciated when it resonates with users on both functional and emotional levels.",
+
+
+      "blogRealAppCostsTitle": "Real App Costs",
+      "blogRealAppCostsDate": "April 18, 2024",
+      "blogRealAppCostsSummary": "A clear breakdown of what really drives app development costs — and why similar ideas can end up with very different budgets.",
+      "blogRealAppCostsContent": "Understanding the true costs of app development is essential for planning and budgeting effectively. Several factors influence the final budget, including feature complexity, platform choice, design depth, backend infrastructure, integrations, and long-term maintenance.\n\n1. Feature Complexity:\nMore complex features like real-time chat, AI recommendations, or multimedia streaming significantly increase development time and cost. Simpler MVP features reduce expenses and allow faster launch.\n\n2. Platform Choice:\niOS, Android, or cross-platform solutions each have different cost implications. Native apps often require separate development teams for each platform, while cross-platform tools like Flutter can reduce development effort.\n\n3. Design & UX:\nHigh-fidelity designs, custom animations, and detailed user flows improve user satisfaction but require more design and development time. Balancing quality with budget is key.\n\n4. Backend & Infrastructure:\nApps with real-time databases, cloud storage, or complex server logic need robust backend architecture, which can add to costs.\n\n5. Integrations & APIs:\nConnecting with third-party services like payment gateways, analytics tools, or social platforms requires additional implementation and testing effort.\n\n6. Long-term Maintenance:\nPost-launch updates, bug fixes, and feature expansions also contribute to total cost. Planning for maintenance avoids unexpected expenses.\n\nBy understanding these factors, founders and product teams can make informed decisions, prioritize features, and set realistic budgets to achieve their vision without surprises.",
+
+      "blogDesignVsPerformanceTitle": "Design vs Performance",
+      "blogDesignVsPerformanceDate": "May 1, 2024",
+      "blogDesignVsPerformanceSummary": "An exploration of the trade-off between visual design and performance — and how to create apps that feel both beautiful and fast.",
+      "blogDesignVsPerformanceContent": "Design and performance are two critical aspects of app development that often conflict with each other. Striking the right balance ensures users have a visually appealing experience without sacrificing speed and responsiveness.\n\n1. Visual Design Considerations:\nComplex layouts, custom animations, and high-resolution graphics enhance the app's aesthetics but can significantly impact load times and responsiveness. Designers should prioritize key visuals while minimizing unnecessary elements.\n\n2. Optimizing Performance:\nPerformance optimization includes efficient coding practices, proper memory management, and minimizing heavy assets. Techniques such as lazy loading, caching, and asynchronous data fetching help maintain smooth app behavior.\n\n3. Platform and Device Constraints:\nApps must perform well across multiple devices and platforms. High-end devices may handle rich visuals with ease, but mid-range or older devices require careful optimization to prevent slowdowns.\n\n4. Testing and Monitoring:\nRegular performance testing using metrics like frame rates, CPU/GPU usage, and memory consumption ensures the app meets speed expectations. Monitoring helps identify bottlenecks and allows iterative improvements.\n\n5. Progressive Enhancement:\nBegin with a lightweight core experience for all users and progressively enhance it with advanced visuals or features for capable devices. This ensures accessibility while maintaining performance standards.\n\n6. User-Centered Trade-offs:\nSome trade-offs may be acceptable depending on user expectations and priorities. For example, subtle animations may enhance delight without noticeable performance loss.\n\nConclusion:\nBalancing design and performance requires intentional planning and testing. By optimizing assets, code, and interactions, developers and designers can create apps that are both visually stunning and fast, offering users a seamless and enjoyable experience.",
+
+      "blogFlutterDesignSystemsTitle": "Flutter Design Systems",
+      "blogFlutterDesignSystemsDate": "May 20, 2024",
+      "blogFlutterDesignSystemsSummary": "A practical guide to building scalable Flutter apps using design systems that improve consistency, speed, and team collaboration.",
+      "blogFlutterDesignSystemsContent": "As Flutter applications grow, inconsistent UI can become a serious problem, slowing development and reducing user trust. Design systems provide a structured approach to creating reusable, consistent components and patterns across the app.\n\n1. What is a Design System?\nA design system is a collection of reusable components, styles, and guidelines that ensure consistency and efficiency in app development. It includes color palettes, typography, UI components, and interaction patterns.\n\n2. Benefits of Using a Design System:\n- Consistency: Uniform look and feel across the entire app.\n- Speed: Developers can reuse components instead of recreating them.\n- Collaboration: Designers and developers share a common language and assets.\n- Scalability: Easier to maintain and expand the app as features grow.\n\n3. Implementing in Flutter:\nFlutter’s widget-based architecture makes it ideal for design systems. Reusable widgets, custom themes, and shared style guides allow teams to implement consistent UI quickly.\n\n4. Best Practices:\n- Define clear guidelines for colors, typography, and spacing.\n- Build reusable widgets with flexibility for different contexts.\n- Maintain documentation for both developers and designers.\n- Regularly review and update the system to accommodate new features.\n\nConclusion:\nUsing a design system in Flutter ensures your app scales efficiently while maintaining a consistent, polished experience for users. Teams save time, reduce errors, and can focus on creating features rather than reinventing the UI repeatedly.",
+
+      "blogReadTime": "• 5 min read",
+      "blogEnjoyedArticle": "Enjoyed this article?",
+      "blogDiscoverMore": "Discover more insights and ideas in our blog.",
+      "blogApplyIdea": "Want to apply this idea to your own app?",
+      "blogLetsDiscuss": "Let’s discuss how this concept could work for your project, timeline, and budget.",
+      "blogDiscussOnWhatsapp": "Discuss on WhatsApp",
+      "blogWhatsappMessage": "Hi 👋 I just read your article \"$articleTitle\" and would like to discuss how this idea could work for my app.",
+      "discoverMyStory": "DISCOVER MY STORY"
+
+
+
+
+}
+

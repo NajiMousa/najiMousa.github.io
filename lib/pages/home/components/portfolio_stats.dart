@@ -4,17 +4,28 @@ import 'package:web_portfolio/models/stat.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
-final List<Stat> stats = [
-  Stat(count: "43", text: "Clients"),
-  Stat(count: "68+", text: "Projects"),
-  Stat(count: "12", text: "Awards"),
-  Stat(count: "5", text: "Years\nExperience"),
-];
+import '../../../l10n/app_localizations.dart';
+
+ List<Stat> stats = [];
 
 class PortfolioStats extends StatelessWidget {
+  const PortfolioStats({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    stats = [
+      Stat(count: "43", text: AppLocalizations.of(context)!.clients),
+      Stat(count: "68+", text: AppLocalizations.of(context)!.projects),
+      Stat(count: "4", text: AppLocalizations.of(context)!.awards),
+      Stat(count: "5", text: AppLocalizations.of(context)!.yearsExperience),
+      // Stat(count: "43", text: "Clients"),
+      // Stat(count: "68+", text: "Projects"),
+      // Stat(count: "12", text: "Awards"),
+      // Stat(count: "5", text: "Years\nExperience"),
+    ];
     return Container(
+      padding: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+      color: kAccentColor,
+      width: double.infinity,
       alignment: Alignment.center,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth, context),
@@ -48,10 +59,10 @@ class PortfolioStats extends StatelessWidget {
                     children: [
                       Text(
                         stat.count!,
-                        style: GoogleFonts.oswald(
+                        style: GoogleFonts.ibmPlexSansArabic(
                           fontWeight: FontWeight.w700,
-                          fontSize: 32.0,
-                          color: Colors.white,
+                          fontSize: 36.0,
+                          color: kPrimaryColor,
                         ),
                       ),
                       SizedBox(
@@ -59,9 +70,10 @@ class PortfolioStats extends StatelessWidget {
                       ),
                       Text(
                         stat.text!,
-                        style: TextStyle(
+                        style: GoogleFonts.ibmPlexSansArabic(
                           fontSize: 16.0,
-                          color: kCaptionColor,
+                          color: kBackgroundColor,
+                          fontWeight: FontWeight.bold
                         ),
                       )
                     ],

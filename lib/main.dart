@@ -4,12 +4,34 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:web_portfolio/pages/home/home.dart';
 import 'package:web_portfolio/utils/constants.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'l10n/app_localizations.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  Locale _locale = const Locale('en');
+
+  void _toggleLocale() {
+    setState(() {
+      if (_locale.languageCode == 'en') {
+        _locale = const Locale('ar');
+      } else {
+        _locale = const Locale('en');
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -18,6 +40,17 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
+          // locale: _locale,
+          // supportedLocales: AppLocalizations.delegate.supportedLocales,
+          // localizationsDelegates: const [
+          //   AppLocalizations.delegate,
+          //   GlobalMaterialLocalizations.delegate,
+          //   GlobalWidgetsLocalizations.delegate,
+          //   GlobalCupertinoLocalizations.delegate,
+          // ],
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          locale: _locale,
           title: "Flutter Portfolio",
           debugShowCheckedModeBanner: false,
           themeMode: ThemeMode.dark,
@@ -28,39 +61,33 @@ class MyApp extends StatelessWidget {
             canvasColor: kBackgroundColor,
             textTheme: GoogleFonts.latoTextTheme(),
           ),
-          home: child,
+          // home: child,
+          home: Stack(
+            children: [
+              child!, // المحتوى الأصلي للصفحة
+              Positioned(
+                bottom: 20,
+                right: 20,
+                child: FloatingActionButton(
+                  onPressed: _toggleLocale,
+                  backgroundColor: kPrimaryColor,
+                  // foregroundColor: Colors.white,
+                  shape: CircleBorder(),
+                  child: Icon(
+                    Icons.language,
+                    color: Colors.white,
+                  ),
+                  tooltip: _locale.languageCode == 'en'
+                      ? "Switch to Arabic"
+                      : "التبديل للإنجليزية",
+                ),
+
+              ),
+            ],
+          ),
         );
       },
       child: Home(),
     );
   }
-  // Widget build(BuildContext context) {
-  //   return MaterialApp(
-  //     title: "Flutter Portfolio",
-  //     debugShowCheckedModeBanner: false,
-  //     themeMode: ThemeMode.dark,
-  //     darkTheme: Theme.of(context).copyWith(
-  //       platform: TargetPlatform.android,
-  //       scaffoldBackgroundColor: kBackgroundColor,
-  //       primaryColor: kPrimaryColor,
-  //       canvasColor: kBackgroundColor,
-  //       textTheme: GoogleFonts.latoTextTheme(),
-  //     ),
-  //     builder: (context, widget) => ResponsiveWrapper.builder(
-  //       ClampingScrollWrapper.builder(context, widget!),
-  //       defaultScale: true,
-  //       breakpoints: [
-  //         ResponsiveBreakpoint.resize(450, name: MOBILE),
-  //         ResponsiveBreakpoint.resize(800, name: TABLET),
-  //         ResponsiveBreakpoint.resize(1000, name: TABLET),
-  //         ResponsiveBreakpoint.resize(1200, name: DESKTOP),
-  //         ResponsiveBreakpoint.resize(2460, name: "4K"),
-  //       ],
-  //       background: Container(
-  //         color: kBackgroundColor,
-  //       ),
-  //     ),
-  //     home: Home(),
-  //   );
-  // }
 }

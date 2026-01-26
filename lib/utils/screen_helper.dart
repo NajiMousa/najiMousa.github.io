@@ -17,7 +17,8 @@ class ScreenHelper extends StatelessWidget {
 
   static bool isDesktop(BuildContext context) =>
       MediaQuery.of(context).size.width >= 1200.0;
-
+  static bool isHorizantal(BuildContext context) =>
+      MediaQuery.of(context).size.width < MediaQuery.of(context).size.height;
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(

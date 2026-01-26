@@ -6,68 +6,76 @@ import 'package:web_portfolio/models/design_process.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
-final List<DesignProcess> designProcesses = [
-  DesignProcess(
-    title: "RESEARCH",
-    imagePath: "assets/search.svg",
-    subtitle:
-        "Understanding user needs, market trends, and defining the problem.",
-  ),
-  DesignProcess(
-    title: "DESIGN",
-    imagePath: "assets/design.svg",
-    subtitle: "Creating wireframes, UI/UX prototypes, and visual concepts.",
-  ),
-  DesignProcess(
-    title: "DEVELOP",
-    imagePath: "assets/coding.svg",
-    subtitle: "Implementing responsive and functional interfaces using code.",
-  ),
-  DesignProcess(
-    title: "WRITE",
-    imagePath: "assets/write.svg",
-    subtitle: "Crafting content, documentation, and meaningful copy.",
-  ),
-  DesignProcess(
-    title: "PROMOTE",
-    imagePath: "assets/megaphone.svg",
-    subtitle: "Marketing the product, building awareness, and acquiring users.",
-  ),
-  DesignProcess(
-    title: "DEPLOY",
-    imagePath: "assets/deploy.svg",
-    subtitle:
-        "Launching the product on app stores or web with stability checks.",
-  ),
-  // DesignProcess(
-  //   title: "DESIGN",
-  //   imagePath: "assets/design.png",
-  //   subtitle:
-  //   "A full stack allround designer thay may or may not include a guide for specific creative",
-  // ),
-  // DesignProcess(
-  //   title: "DEVELOP",
-  //   imagePath: "assets/develop.png",
-  //   subtitle:
-  //   "A full stack allround developer thay may or may not include a guide for specific creative",
-  // ),
-  // DesignProcess(
-  //   title: "WRITE",
-  //   imagePath: "assets/write.png",
-  //   subtitle:
-  //   "A full stack allround writer thay may or may not include a guide for specific creative",
-  // ),
-  // DesignProcess(
-  //   title: "PROMOTE",
-  //   imagePath: "assets/promote.png",
-  //   subtitle:
-  //   "A full stack allround promoter thay may or may not include a guide for specific creative",
-  // ),
-];
+import '../../../l10n/app_localizations.dart';
+
+ List<DesignProcess> designProcesses = [];
 
 class CvSection extends StatelessWidget {
+  const CvSection({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    designProcesses = [
+      DesignProcess(
+        title: AppLocalizations.of(context)!.research,
+        imagePath: "assets/search.svg",
+        subtitle:
+        AppLocalizations.of(context)!.researchDescription,
+      ),
+      DesignProcess(
+        title: AppLocalizations.of(context)!.design,
+        imagePath: "assets/design.svg",
+        subtitle: AppLocalizations.of(context)!.designDescription,
+      ),
+      DesignProcess(
+        title: AppLocalizations.of(context)!.develop,
+        imagePath: "assets/coding.svg",
+        // subtitle: "Implementing responsive and functional interfaces using code.",
+        subtitle: AppLocalizations.of(context)!.developDescription,
+      ),
+      DesignProcess(
+        title: AppLocalizations.of(context)!.write,
+        imagePath: "assets/write.svg",
+        // subtitle: "Crafting content, documentation, and meaningful copy.",
+        subtitle: AppLocalizations.of(context)!.writeDescription,
+      ),
+      DesignProcess(
+        title: AppLocalizations.of(context)!.promote,
+        imagePath: "assets/megaphone.svg",
+        // subtitle: "Marketing the product, building awareness, and acquiring users.",
+        subtitle: AppLocalizations.of(context)!.promoteDescription,
+      ),
+      DesignProcess(
+        title: AppLocalizations.of(context)!.deploy,
+        imagePath: "assets/deploy.svg",
+        subtitle:
+        // "Launching the product on app stores or web with stability checks.",
+        AppLocalizations.of(context)!.deployDescription,
+      ),
+      // DesignProcess(
+      //   title: "DESIGN",
+      //   imagePath: "assets/design.png",
+      //   subtitle:
+      //   "A full stack allround designer thay may or may not include a guide for specific creative",
+      // ),
+      // DesignProcess(
+      //   title: "DEVELOP",
+      //   imagePath: "assets/develop.png",
+      //   subtitle:
+      //   "A full stack allround developer thay may or may not include a guide for specific creative",
+      // ),
+      // DesignProcess(
+      //   title: "WRITE",
+      //   imagePath: "assets/write.png",
+      //   subtitle:
+      //   "A full stack allround writer thay may or may not include a guide for specific creative",
+      // ),
+      // DesignProcess(
+      //   title: "PROMOTE",
+      //   imagePath: "assets/promote.png",
+      //   subtitle:
+      //   "A full stack allround promoter thay may or may not include a guide for specific creative",
+      // ),
+    ];
     return Container(
       width: double.infinity,
       child: ScreenHelper(
@@ -94,7 +102,8 @@ class CvSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "BETTER DESIGN,\nBETTER EXPERIENCES",
+                  // "BETTER DESIGN,\nBETTER EXPERIENCES",
+                  AppLocalizations.of(context)!.betterDesignBetterExperiences,
                   style: GoogleFonts.ibmPlexSansArabic(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
@@ -102,20 +111,21 @@ class CvSection extends StatelessWidget {
                     fontSize: 18.0,
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {},
-                  child: MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    child: Text(
-                      "DOWNLOAD CV",
-                      style: GoogleFonts.ibmPlexSansArabic(
-                        color: kPrimaryColor,
-                        fontWeight: FontWeight.w900,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                ),
+                // GestureDetector(
+                //   onTap: () {},
+                //   child: MouseRegion(
+                //     cursor: SystemMouseCursors.click,
+                //     child: Text(
+                //       // "DOWNLOAD CV",
+                //       AppLocalizations.of(context)!.downloadCv,
+                //       style: GoogleFonts.ibmPlexSansArabic(
+                //         color: kPrimaryColor,
+                //         fontWeight: FontWeight.w900,
+                //         fontSize: 16.0,
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
             SizedBox(
@@ -139,11 +149,23 @@ class CvSection extends StatelessWidget {
                               // : 179.0,
                               : constraints.maxWidth / 3.0,
                       // Hack to adjust child height
-                      childAspectRatio: ScreenHelper.isMobile(context)
-                          ? MediaQuery.of(context).size.aspectRatio * 2.5
+                      childAspectRatio: !ScreenHelper.isHorizantal(context) && (ScreenHelper.isMobile(context) || ScreenHelper.isTablet(context)) ?
+                      ScreenHelper.isMobile(context)
+                          ? MediaQuery.of(context).size.aspectRatio * (MediaQuery.of(context).size.width < 800 ? 2 : 2.5)
+                          : ScreenHelper.isTablet(context)
+                          ? MediaQuery.of(context).size.aspectRatio * 1.5
+                          : MediaQuery.of(context).size.aspectRatio * 0.75 :
+                      ScreenHelper.isMobile(context)
+                          ? MediaQuery.of(context).size.aspectRatio * (MediaQuery.of(context).size.width < 800 ? 2 : 2.5)
                           : ScreenHelper.isDesktop(context)
-                              ? MediaQuery.of(context).size.aspectRatio * 1.5
-                              : MediaQuery.of(context).size.aspectRatio * 2,
+                          ? MediaQuery.of(context).size.aspectRatio * 1.5
+                          : MediaQuery.of(context).size.aspectRatio * 2
+
+                      // ScreenHelper.isMobile(context)
+                      //     ? MediaQuery.of(context).size.aspectRatio * (MediaQuery.of(context).size.height < 800 ? 2 : 2.5)
+                      //     : ScreenHelper.isDesktop(context)
+                      //         ? MediaQuery.of(context).size.aspectRatio * 1.5
+                      //         : MediaQuery.of(context).size.aspectRatio * 2,
                     ),
                     itemBuilder: (BuildContext context, int index) {
                       return Container(

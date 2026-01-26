@@ -4,54 +4,67 @@ import 'package:web_portfolio/models/skill.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
-List<Skill> skills = [
-  Skill(
-    skill: "UX Research & User Journey",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "UI Design (Figma || Xd)",
-    percentage: 85,
-  ),
+import '../../../l10n/app_localizations.dart';
 
-  // مهارات Flutter
-  Skill(
-    skill: "Flutter & Dart",
-    percentage: 88,
-  ),
-  Skill(
-    skill: "State Management (Provider / Getx)",
-    percentage: 75,
-  ),
-
-  // مهارات مشتركة
-  Skill(
-    skill: "Responsive & Accessible Design",
-    percentage: 72,
-  ),
-  Skill(
-    skill: "API Integration",
-    percentage: 70,
-  ),
-
-  // Soft Skills
-  Skill(
-    skill: "Problem Solving",
-    percentage: 85,
-  ),
-  Skill(
-    skill: "Communication & Teamwork",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "Time Management",
-    percentage: 75,
-  ),
-];
+List<Skill> skills = [];
 
 class SkillSection extends StatelessWidget {
+  const SkillSection({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    skills = [
+      Skill(
+        // skill: "UX Research & User Journey",
+        skill: AppLocalizations.of(context)!.uxResearchUserJourney,
+        percentage: 80,
+      ),
+      Skill(
+        // skill: "UI Design (Figma || Xd)",
+        skill: AppLocalizations.of(context)!.uiDesignFigmaXd,
+        percentage: 85,
+      ),
+
+      // مهارات Flutter
+      Skill(
+        // skill: "Flutter & Dart",
+        skill: AppLocalizations.of(context)!.flutterAndDart,
+        percentage: 88,
+      ),
+      Skill(
+        // skill: "State Management (Provider / Getx)",
+        skill: AppLocalizations.of(context)!.stateManagement,
+        percentage: 75,
+      ),
+
+      // مهارات مشتركة
+      Skill(
+        // skill: "Responsive & Accessible Design",
+        skill: AppLocalizations.of(context)!.responsiveAndAccessibleDesign,
+        percentage: 72,
+      ),
+      Skill(
+        // skill: "API Integration",
+        skill: AppLocalizations.of(context)!.apiIntegration,
+        percentage: 70,
+      ),
+
+      // Soft Skills
+      Skill(
+        // skill: "Problem Solving",
+        skill: AppLocalizations.of(context)!.problemSolving,
+        percentage: 85,
+      ),
+      Skill(
+        // skill: "Communication & Teamwork",
+        skill: AppLocalizations.of(context)!.communicationAndTeamwork,
+        percentage: 80,
+      ),
+      Skill(
+        // skill: "Time Management",
+        skill: AppLocalizations.of(context)!.timeManagement,
+        percentage: 75,
+      ),
+    ];
     return Container(
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth),
@@ -83,7 +96,8 @@ class SkillSection extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: 50.0,
+                  width: ScreenHelper.isMobile(context) ? 0 : 50.0,
+                  height: ScreenHelper.isMobile(context) ? 50.0 : 0,
                 ),
                 Expanded(
                   flex: ScreenHelper.isMobile(context) ? 0 : 4,
@@ -92,7 +106,9 @@ class SkillSection extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "SKILLS",
+                        // "SKILLS",
+                        // "🛠️ MY SKILL TOOLBOX",
+                        AppLocalizations.of(context)!.mySkillToolbox,
                         style: GoogleFonts.ibmPlexSansArabic(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
@@ -101,10 +117,14 @@ class SkillSection extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 10.0,
+                        height: 18.0,
                       ),
                       Text(
-                        "Here’s a humble set of skills I’ve gained through real-world experience in UX design and Flutter development, always aiming to grow and create meaningful digital products.",
+                        // "Here’s a humble set of skills I’ve gained through real-world experience in UX design and Flutter development, always aiming to grow and create meaningful digital products.",
+                        // "Here’s a set of skills I’ve honed through real-world projects 🌍 — "
+                        //     "from designing smooth user experiences 🎨 to building functional apps with Flutter 📱. "
+                        //     "Always learning, always creating ✨.",
+                        AppLocalizations.of(context)!.mySkillToolboxDescription,
                         style: GoogleFonts.ibmPlexSansArabic(
                           color: kCaptionColor,
                           height: 1.5,

@@ -6,6 +6,8 @@ class WorksCarouselItemModel {
   final String workDescription;
   final String imagePath;
   final List<String> skills;
+  final String behanceUrl;
+  final String behanceImagePath;
 
 
   WorksCarouselItemModel({
@@ -14,6 +16,8 @@ class WorksCarouselItemModel {
     required this.workDescription,
     required this.imagePath,
     required this.skills,
+    required this.behanceUrl,
+    required this.behanceImagePath,
 
   });
 }

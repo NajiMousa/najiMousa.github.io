@@ -17,6 +17,9 @@ class Sponsors extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 50.0),
+      // padding: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+      color: kAccentColor,
+      width: double.infinity,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth),
         tablet: _buildUi(kTabletMaxWidth),
@@ -47,7 +50,7 @@ Widget _buildUi(double width) {
                   .map(
                     (logo) => Container(
                       height: 50.0,
-                      child: Image.asset(logo),
+                      child: Image.asset(logo,color: kPrimaryColor,),
                       constraints: BoxConstraints(
                         // max of 3 per row when on mobile and 5 per row on bigger screens
                         maxWidth: ScreenHelper.isMobile(context)

@@ -9,7 +9,10 @@ import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
+import '../../../l10n/app_localizations.dart';
+
 class TestimonialWidget extends StatefulWidget {
+  const TestimonialWidget({Key? key}) : super(key: key);
   @override
   State<TestimonialWidget> createState() => _TestimonialWidgetState();
 }
@@ -17,10 +20,64 @@ class TestimonialWidget extends StatefulWidget {
 class _TestimonialWidgetState extends State<TestimonialWidget> {
   final CarouselSliderController _carouselController =
       CarouselSliderController();
+   List<Testimonial> testimonials =[];
   int _currentIndex = 0;
+  double carouselContainerHeight = 0;
 
   @override
   Widget build(BuildContext context) {
+    testimonials = [
+      Testimonial(
+        text:
+        // "Naji-at is a true professional at what he does and never ceases to amaze me with his beautiful and thoughtful work. I genuinely look forward to working with him again on future projects.",
+        AppLocalizations.of(context)!.testimonialAhmedJamal,
+        // occupation: "Flutter Developer",
+        occupation: AppLocalizations.of(context)!.testimonialAhmedJamalCompany,
+        // personName: "AHMED JAMAL",
+        personName: AppLocalizations.of(context)!.testimonialAhmedJamalRole,
+        profilePhoto: "assets/ahmedJamal.jpg",
+      ),
+      Testimonial(
+        text:
+        // "Working with Naji-at was an absolute pleasure. His attention to detail and creative approach made the entire process smooth and inspiring. Highly recommended!",
+        AppLocalizations.of(context)!.testimonialDinaBenSaeed,
+        // occupation: "Lead Activator - Nawaculture Org",
+        occupation: AppLocalizations.of(context)!.testimonialDinaBenSaeedCompany,
+        // personName: "DINA BEN-SAEED",
+        personName: AppLocalizations.of(context)!.testimonialDinaBenSaeedRole,
+        profilePhoto: "assets/female01.png",
+      ),
+      Testimonial(
+        text:
+        // "Naji-at consistently delivers beyond expectations. His work speaks for itself — elegant, purposeful, and always on time. Can’t wait to collaborate again.",
+        AppLocalizations.of(context)!.testimonialLaylaAlMansour,
+        // occupation: "Startup Founder",
+        occupation: AppLocalizations.of(context)!.testimonialLaylaAlMansourCompany,
+        // personName: "Layla Al-Mansour",
+        personName: AppLocalizations.of(context)!.testimonialLaylaAlMansourRole,
+        profilePhoto: "assets/female02.jpg",
+      ),
+      Testimonial(
+        text:
+        // "I’ve worked with many professionals, but Naji-at stands out with his dedication, communication, and design sense. He truly understands what the project needs.",
+        AppLocalizations.of(context)!.testimonialTahaAtiyah,
+        // occupation: "Lead Activator IT Specialist",
+        occupation: AppLocalizations.of(context)!.testimonialTahaAtiyahCompany,
+        // personName: "Taha Atiyah - Nawaculture Org",
+        personName: AppLocalizations.of(context)!.testimonialTahaAtiyahRole,
+        profilePhoto: "assets/tahaAtyiah.jpg",
+      ),
+      Testimonial(
+        text:
+        // "From the first draft to the final delivery, Naji-at was impressive. His designs are not only beautiful but functional. Would definitely work with him again!",
+        AppLocalizations.of(context)!.testimonialAyaMohammed,
+        // occupation: "Student",
+        occupation: AppLocalizations.of(context)!.testimonialAyaMohammedCompany,
+        personName: AppLocalizations.of(context)!.testimonialAyaMohammedRole,
+        // personName: "AYA MOHAMMED",
+        profilePhoto: "assets/female03.jpg",
+      ),
+    ];
     return Container(
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth, context),
@@ -31,8 +88,14 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
   }
 
   Widget _buildUi(double width, BuildContext context) {
-    double carouselContainerHeight = MediaQuery.of(context).size.height *
-        (ScreenHelper.isMobile(context) ? 1 : .70);
+    !ScreenHelper.isHorizantal(context) &&
+            (ScreenHelper.isMobile(context) || ScreenHelper.isTablet(context))
+        ? carouselContainerHeight = MediaQuery.of(context).size.width * (.95)
+        : carouselContainerHeight = MediaQuery.of(context).size.height *
+            (ScreenHelper.isMobile(context) ? 1 : .70);
+
+    // double carouselContainerHeight = MediaQuery.of(context).size.height *
+    //     (ScreenHelper.isMobile(context) ? 1 : .70);
     return Center(
       child: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
@@ -45,7 +108,8 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "TESTIMONIALS",
+                  // "💬 TESTIMONIALS",
+                  AppLocalizations.of(context)!.testimonials,
                   style: GoogleFonts.ibmPlexSansArabic(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
@@ -53,29 +117,32 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
                     height: 1.3,
                   ),
                 ),
-                SizedBox(
-                  height: 5.0,
-                ),
+                SizedBox(height: 18.0),
                 Container(
-                  constraints: BoxConstraints(maxWidth: 500.0),
+                  constraints: BoxConstraints(maxWidth: 550.0),
                   child: RichText(
                     text: TextSpan(
                       children: [
                         TextSpan(
                           text:
-                              "This is the portfolio section. There is a lot of work here",
+                          // "Words from amazing people I’ve had the chance to work with 🌟. ",
+                          AppLocalizations.of(context)!.testimonialsDescriptionA,
                           style: GoogleFonts.ibmPlexSansArabic(
                               color: Colors.white, height: 1.8),
                         ),
                         TextSpan(
-                            text: " click here to contact us",
-                            style: TextStyle(
-                              color: kPrimaryColor,
-                              fontWeight: FontWeight.w700,
-                              height: 1.8,
-                            )),
+                          // text: "Their feedback 💌",
+                          text: AppLocalizations.of(context)!.testimonialsDescriptionB,
+                          style: TextStyle(
+                            color: kPrimaryColor,
+                            fontWeight: FontWeight.w700,
+                            height: 1.8,
+                          ),
+                        ),
                         TextSpan(
-                          text: ". Please subscribe to me youtube channel :-)",
+                          text:
+                          // " keeps me inspired to grow, create, and deliver better experiences 🚀.",
+                          AppLocalizations.of(context)!.testimonialsDescriptionC,
                           style: GoogleFonts.ibmPlexSansArabic(
                               color: Colors.white, height: 1.8),
                         ),
@@ -83,6 +150,46 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
                     ),
                   ),
                 ),
+
+                // Text(
+                //   "TESTIMONIALS",
+                //   style: GoogleFonts.ibmPlexSansArabic(
+                //     color: Colors.white,
+                //     fontWeight: FontWeight.w900,
+                //     fontSize: 30.0,
+                //     height: 1.3,
+                //   ),
+                // ),
+                // SizedBox(
+                //   height: 5.0,
+                // ),
+                // Container(
+                //   constraints: BoxConstraints(maxWidth: 500.0),
+                //   child: RichText(
+                //     text: TextSpan(
+                //       children: [
+                //         TextSpan(
+                //           text:
+                //               "This is the portfolio section. There is a lot of work here",
+                //           style: GoogleFonts.ibmPlexSansArabic(
+                //               color: Colors.white, height: 1.8),
+                //         ),
+                //         TextSpan(
+                //             text: " click here to contact us",
+                //             style: TextStyle(
+                //               color: kPrimaryColor,
+                //               fontWeight: FontWeight.w700,
+                //               height: 1.8,
+                //             )),
+                //         TextSpan(
+                //           text: ". Please subscribe to me youtube channel :-)",
+                //           style: GoogleFonts.ibmPlexSansArabic(
+                //               color: Colors.white, height: 1.8),
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
                 SizedBox(
                   height: 45.0,
                 ),
@@ -101,13 +208,21 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
                             autoPlayInterval: Duration(seconds: 12),
                             viewportFraction: 1,
                             scrollPhysics: AlwaysScrollableScrollPhysics(),
-                            height: ScreenHelper.isMobile(context) ? carouselContainerHeight/1.65 :ScreenHelper.isTablet(context) ? carouselContainerHeight/2.3 :carouselContainerHeight/2.5,
+                            height: ScreenHelper.isMobile(context)
+                                ? carouselContainerHeight /
+                                    (MediaQuery.of(context).size.height < 800
+                                        ? 1.2
+                                        : 1.65)
+                                : ScreenHelper.isTablet(context)
+                                    ? carouselContainerHeight / 2.3
+                                    : carouselContainerHeight / 2.5,
                             onPageChanged: (index, reason) {
-                              setState(() {
-                                _currentIndex = index;
-                              });
+                              // setState(() {
+                              //   _currentIndex = index;
+                              // });
                             },
                           ),
+                          // items: [],
                           items: List.generate(
                             testimonials.length,
                             (index) => Builder(
@@ -122,8 +237,11 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
                                                 : Axis.horizontal,
                                         // Lets map
                                         children: [
-                                          testimonialWidgets(testimonials[index]),
-                                          testimonialWidgets(testimonials[(index + 1) % testimonials.length]),
+                                          testimonialWidgets(
+                                              testimonials[index]),
+                                          testimonialWidgets(testimonials[
+                                              (index + 1) %
+                                                  testimonials.length]),
                                         ],
                                       );
                                     },
@@ -134,45 +252,46 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
                           ).toList(),
                         ),
                       ),
-                      Wrap(
-                        alignment: WrapAlignment.center,
-                        crossAxisAlignment: WrapCrossAlignment.center,
-                        spacing: 8.0,
-                        children: List.generate(testimonials.length, (index) {
-                          const int visibleCount = 2;
-                          int halfWindow = visibleCount ~/ 2;
 
-                          int start = (_currentIndex - halfWindow)
-                              .clamp(0, testimonials.length - visibleCount);
-                          int end = (start + visibleCount)
-                              .clamp(0, testimonials.length);
-
-                          bool isInWindow = index >= start && index < end;
-                          bool isActive = index == _currentIndex;
-
-                          double width = isActive ? 32 : (isInWindow ? 12 : 6);
-                          double height = isInWindow ? 12 : 6;
-                          Color color = isActive
-                              ? kPrimaryColor
-                              : (isInWindow
-                              ? Colors.grey
-                              : Colors.grey.withOpacity(0.3));
-
-                          return GestureDetector(
-                            onTap: () =>
-                                _carouselController.animateToPage(index),
-                            child: AnimatedContainer(
-                              duration: Duration(milliseconds: 300),
-                              width: width,
-                              height: height,
-                              decoration: BoxDecoration(
-                                color: color,
-                                borderRadius: BorderRadius.circular(15),
-                              ),
-                            ),
-                          );
-                        }),
-                      ),
+                      // Wrap(
+                      //   alignment: WrapAlignment.center,
+                      //   crossAxisAlignment: WrapCrossAlignment.center,
+                      //   spacing: 8.0,
+                      //   children: List.generate(testimonials.length, (index) {
+                      //     const int visibleCount = 2;
+                      //     int halfWindow = visibleCount ~/ 2;
+                      //
+                      //     int start = (_currentIndex - halfWindow)
+                      //         .clamp(0, testimonials.length - visibleCount);
+                      //     int end = (start + visibleCount)
+                      //         .clamp(0, testimonials.length);
+                      //
+                      //     bool isInWindow = index >= start && index < end;
+                      //     bool isActive = index == _currentIndex;
+                      //
+                      //     double width = isActive ? 32 : (isInWindow ? 12 : 6);
+                      //     double height = isInWindow ? 12 : 6;
+                      //     Color color = isActive
+                      //         ? kPrimaryColor
+                      //         : (isInWindow
+                      //         ? Colors.grey
+                      //         : Colors.grey.withOpacity(0.3));
+                      //
+                      //     return GestureDetector(
+                      //       onTap: () =>
+                      //           _carouselController.animateToPage(index),
+                      //       child: AnimatedContainer(
+                      //         duration: Duration(milliseconds: 300),
+                      //         width: width,
+                      //         height: height,
+                      //         decoration: BoxDecoration(
+                      //           color: color,
+                      //           borderRadius: BorderRadius.circular(15),
+                      //         ),
+                      //       ),
+                      //     );
+                      //   }),
+                      // ),
                     ],
                   ),
                 ),
@@ -184,74 +303,32 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
     );
   }
 
-  final List<Testimonial> testimonials = [
-    Testimonial(
-      text:
-          "Naji-at is a true professional at what he does and never ceases to amaze me with his beautiful and thoughtful work. I genuinely look forward to working with him again on future projects.",
-      occupation: "Flutter Developer",
-      personName: "AHMED JAMAL",
-      profilePhoto: "assets/ahmedJamal.jpg",
-    ),
-    Testimonial(
-      text:
-          "Working with Naji-at was an absolute pleasure. His attention to detail and creative approach made the entire process smooth and inspiring. Highly recommended!",
-      occupation: "Lead Activator - Nawaculture Org",
-      personName: "DINA BEN-SAEED",
-      profilePhoto: "assets/female01.png",
-    ),
-    Testimonial(
-      text:
-          "Naji-at consistently delivers beyond expectations. His work speaks for itself — elegant, purposeful, and always on time. Can’t wait to collaborate again.",
-      occupation: "Startup Founder",
-      personName: "Layla Al-Mansour",
-      profilePhoto: "assets/female02.jpg",
-    ),
-    Testimonial(
-      text:
-          "I’ve worked with many professionals, but Naji-at stands out with his dedication, communication, and design sense. He truly understands what the project needs.",
-      occupation: "Lead Activator IT Specialist",
-      personName: "Taha Atiyah - Nawaculture Org",
-      profilePhoto: "assets/tahaAtyiah.jpg",
-    ),
-    Testimonial(
-      text:
-      "From the first draft to the final delivery, Naji-at was impressive. His designs are not only beautiful but functional. Would definitely work with him again!",
-      occupation: "Student",
-      personName: "AYA MOHAMMED",
-      profilePhoto: "assets/female03.jpg",
-    ),
-  ];
-  Widget testimonialWidgets (Testimonial testimonial){
+
+
+  Widget testimonialWidgets(Testimonial testimonial) {
     return Expanded(
-      flex: ScreenHelper.isMobile(context)
-          ? 0
-          : 1,
+      flex: ScreenHelper.isMobile(context) ? 0 : 1,
       child: Container(
-        padding:
-        const EdgeInsets.all(8.0),
-        margin:
-        EdgeInsets.only(bottom: 50.0),
+        padding: const EdgeInsets.all(8.0),
+        margin: EdgeInsets.only(bottom: 50.0),
         child: Column(
-          crossAxisAlignment:
-          CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               child: Image.asset(
                 "assets/quote.png",
                 width: 50.0,
+                color: kPrimaryColor,
               ),
             ),
             SizedBox(
               height: 15.0,
             ),
-            Expanded(
-              child: Text(
-                testimonial.text!,
-                style: GoogleFonts
-                    .ibmPlexSansArabic(
-                  color: kCaptionColor,
-                  height: 1.8,
-                ),
+            Text(
+              testimonial.text!,
+              style: GoogleFonts.ibmPlexSansArabic(
+                color: kCaptionColor,
+                height: 1.8,
               ),
             ),
             SizedBox(
@@ -261,10 +338,8 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
               children: [
                 CircleAvatar(
                   radius: 25.0,
-                  backgroundColor:
-                  Colors.transparent,
-                  backgroundImage:
-                  AssetImage(
+                  backgroundColor: Colors.transparent,
+                  backgroundImage: AssetImage(
                     testimonial.profilePhoto!,
                   ),
                 ),
@@ -272,19 +347,13 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
                   width: 20.0,
                 ),
                 Column(
-                  crossAxisAlignment:
-                  CrossAxisAlignment
-                      .start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       testimonial.personName!,
-                      style: GoogleFonts
-                          .ibmPlexSansArabic(
-                        color:
-                        Colors.white,
-                        fontWeight:
-                        FontWeight
-                            .w700,
+                      style: GoogleFonts.ibmPlexSansArabic(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w700,
                         fontSize: 16.0,
                       ),
                     ),
@@ -293,10 +362,8 @@ class _TestimonialWidgetState extends State<TestimonialWidget> {
                     ),
                     Text(
                       testimonial.occupation!,
-                      style: GoogleFonts
-                          .ibmPlexSansArabic(
-                        color:
-                        kCaptionColor,
+                      style: GoogleFonts.ibmPlexSansArabic(
+                        color: kCaptionColor,
                       ),
                     )
                   ],
