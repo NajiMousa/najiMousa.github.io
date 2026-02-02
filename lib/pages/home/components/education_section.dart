@@ -75,9 +75,8 @@ class EducationSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  // "EDUCATION",
-                  // "🎓 MY LEARNING JOURNEY",
                   AppLocalizations.of(context)!.myLearningJourney,
+                  textAlign: TextAlign.center, // أو TextAlign.right للعربي
                   style: GoogleFonts.ibmPlexSansArabic(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
@@ -85,21 +84,21 @@ class EducationSection extends StatelessWidget {
                     height: 1.3,
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {},
-                  child: MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    child: Text(
-                      // "DOWNLOAD CV",
-                      AppLocalizations.of(context)!.downloadCv,
-                      style: GoogleFonts.ibmPlexSansArabic(
-                        color: kPrimaryColor,
-                        fontWeight: FontWeight.w900,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                ),
+                // GestureDetector(
+                //   onTap: () {},
+                //   child: MouseRegion(
+                //     cursor: SystemMouseCursors.click,
+                //     child: Text(
+                //       // "DOWNLOAD CV",
+                //       AppLocalizations.of(context)!.downloadCv,
+                //       style: GoogleFonts.ibmPlexSansArabic(
+                //         color: kPrimaryColor,
+                //         fontWeight: FontWeight.w900,
+                //         fontSize: 16.0,
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
 
             ),

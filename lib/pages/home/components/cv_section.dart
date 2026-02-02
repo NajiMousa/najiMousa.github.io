@@ -111,21 +111,21 @@ class CvSection extends StatelessWidget {
                     fontSize: 18.0,
                   ),
                 ),
-                // GestureDetector(
-                //   onTap: () {},
-                //   child: MouseRegion(
-                //     cursor: SystemMouseCursors.click,
-                //     child: Text(
-                //       // "DOWNLOAD CV",
-                //       AppLocalizations.of(context)!.downloadCv,
-                //       style: GoogleFonts.ibmPlexSansArabic(
-                //         color: kPrimaryColor,
-                //         fontWeight: FontWeight.w900,
-                //         fontSize: 16.0,
-                //       ),
-                //     ),
-                //   ),
-                // ),
+                GestureDetector(
+                  onTap: () {},
+                  child: MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Text(
+                      // "DOWNLOAD CV",
+                      AppLocalizations.of(context)!.downloadCv,
+                      style: GoogleFonts.ibmPlexSansArabic(
+                        color: kPrimaryColor,
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16.0,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             SizedBox(

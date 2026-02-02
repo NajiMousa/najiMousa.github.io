@@ -15,7 +15,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get services => 'الخدمات';
 
   @override
-  String get skills => 'المهارات';
+  String get hederSkills => 'المهارات';
 
   @override
   String get education => 'التعليم';
@@ -1195,4 +1195,262 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get discoverMyStory => 'اكتشف قصتي';
+
+  @override
+  String get appTitle => 'قصتي: مغامرة مستمرة';
+
+  @override
+  String get greeting => 'أ.م. الـــــــ ناجي بن موسى';
+
+  @override
+  String get quote1 => 'أذا أفنيت عمرك في جمع السلاح،';
+
+  @override
+  String get quote2 => 'فمتى تقاتل؟!';
+
+  @override
+  String get title => '🇵🇸 جُذوة البداية: مِيلادُ إرادة';
+
+  @override
+  String get birth => '⏳ مع منعطف القرن العشرين نحو نهايته، في العام السادس من العقد الأخير (1996)، رأيت النور في زمنٍ كانَ';
+
+  @override
+  String get palestinianDream => ' الحلمُ الفلسطينيُّ';
+
+  @override
+  String get birthEnd => 'يخترقُ جدرانَ المستحيل. فأتيتُ إلى الدنيا وفي عينيِّ بصيصُ انتفاضةِ الحجارة 🇵🇸 وفي مسمعي همسُ الشهداء.';
+
+  @override
+  String get identityTitle => '🔧 أنا الابنُ البارُّ';
+
+  @override
+  String get palestine => 'لفلسطين؛';
+
+  @override
+  String get identity => 'مهندسٌ بالعلم، ومقاومٌ بالكلمة.';
+
+  @override
+  String get identityEnd => 'أرى في كلِّ حرفٍ معركة، وفي كلِّ معادلةٍ انتصاراً.';
+
+  @override
+  String get gaza => '🏠 غزاويُّ الأصلِ والفخر،';
+
+  @override
+  String get memory => 'أحملُ في ذاكرتي عبقَ ترابِ';
+
+  @override
+  String get beerSheba => 'بئر السبع';
+
+  @override
+  String get memoryEnd => 'حيثُ رقدَ الأجدادُ على وعدِ العودةِ الذي صار نشيداً لحياتي 🗝️.';
+
+  @override
+  String get survivor => '🛡️ الناجي -بعونِ الله-';
+
+  @override
+  String get survivorStory => 'من أعتى صراعاتِ هذه الأرض، نبتُّ من قلبِ أحبِّ البقاعِ إليّ:';
+
+  @override
+  String get jerusalem => 'بيتِ المقدسِ وأكنافِها 🕌.';
+
+  @override
+  String get mission => '📖 ...لأرويَ للعالمِ قصةَ شعبٍ لا ينكسر؛ يبني';
+
+  @override
+  String get engineering => 'بالهندسةِ';
+
+  @override
+  String get missionMiddle => 'ما هدمتهُ المدافع، ويخطُّ';
+
+  @override
+  String get code => 'بالكودِ فجرَ العودةِ الموعود 🌅.';
+
+  @override
+  String get storyTitle => '📜 فصـلُ السَّعـي والتمكيـن';
+
+  @override
+  String get storyStart => 'تبدأُ حكايتي من يقيني بأنَّ';
+
+  @override
+  String get quranVerse1 => 'لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ';
+
+  @override
+  String get storyMiddle1 => '؛ وأنَّ المحنَ ما هي إلا صقلٌ للمعدن، والحدودَ ما هي إلا أوهامٌ تتبددُ أمامَ عظمةِ الاستعانةِ بالله وعلوِّ الهمة.';
+
+  @override
+  String get storyMiddlee => 'لم تكن مسيرتي مجرد محطات أكاديمية، بل كانت رحلةً لصياغةِ رؤيةٍ متكاملة بدأت ملامحُها في غزة، حيثُ تُحول الصعابُ الإرادةَ إلى ابتكار.';
+
+  @override
+  String get journey => 'اليوم، وبعد نيل';
+
+  @override
+  String get degrees => 'درجة الماجستير في إدارة الأعمال (MBA) وقبلها هندسة البرمجيات،';
+
+  @override
+  String get journeyMiddle => 'أقفُ بجاهزية تامة لخوض غمار البحث العلمي على مستوى';
+
+  @override
+  String get phd => 'درجة الدكتوراة';
+
+  @override
+  String get journeyEnd => '، مدفوعاً برغبةٍ صادقة في تطوير حلول تكنولوجية وإدارية تتجاوز الحدود التقليدية.';
+
+  @override
+  String get techJourney => 'لقد كانت رحلتي التقنية التي بدأت عام 2014 في';
+
+  @override
+  String get mechatronics => 'هندسة الميكاترونكس';
+
+  @override
+  String get techJourneyMiddle => '، هي المختبر الأول الذي تعاملتُ فيه مع تعقيدات الأنظمة، قبل أن ينتقل شغفي نحو';
+
+  @override
+  String get software => 'هندسة البرمجيات (دفعة 2020)';
+
+  @override
+  String get techJourneyEnd => ' لأصهر الدقة الهندسية في قوالب رقمية.';
+
+  @override
+  String get freelance => 'لم يكن الجانب النظري كافياً بالنسبة لي؛ فانطلقتُ في';
+
+  @override
+  String get freelanceWorld => 'عالم العمل الحر';
+
+  @override
+  String get freelanceMiddle => ' منذ عام 2018، حيث قمتُ بتصميم و';
+
+  @override
+  String get skills => 'تطوير تجربة المستخدم (UX/UI) وتطبيقات Flutter';
+
+  @override
+  String get freelanceEnd => ' لمشاريع كبرى، محولاً احتياجات المستخدمين إلى واجهات رقمية ذكية تخدم آلاف البشر.';
+
+  @override
+  String get experience => 'هذا التراكم المهني، المدعوم ببرامج تدريبية عالمية مع';
+
+  @override
+  String get google => 'Google';
+
+  @override
+  String get experienceMiddle => ' و';
+
+  @override
+  String get training => 'تجربة التدريب (Coaching) وإعداد المدربين (TOT)';
+
+  @override
+  String get experienceEnd => '، مكنني من قيادة الفرق ونقل المعرفة بفعالية تحت أصعب الظروف. لقد كان الماجستير هو الجسر الذي ربط بين الدقة التقنية والرؤية الاستراتيجية، مما صقل قدرتي على البحث العلمي الرصين وإدارة الموارد برؤية تحليلية شاملة.';
+
+  @override
+  String get phdGoal => 'إنَّ تطلعي اليوم لنيل';
+
+  @override
+  String get phdDegree => 'درجة الدكتوراة';
+
+  @override
+  String get phdGoalMiddle => ' هو سعيٌ منهجي للمساهمة في الحراك العلمي العالمي، متسلحاً بقدرة استثنائية على العمل تحت الضغط، ونضج إداري، ويقينٍ راسخ بأنَّ مَن استعان بالله طوع له المستحيل. وختاماً، أمضي مستمسكاً بحبله المتين، موقناً بقلبي أن';
+
+  @override
+  String get quranVerse2 => 'وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ';
+
+  @override
+  String get phdGoalEnd => '؛ فالعلمُ فضلٌ منه، والسعيُ توفيقٌ منه، والأثرُ بركةٌ منه، سائلاً المولى أن يفتح لي أبواب فضله، ويجعل من عملي نافعاً خالصاً لوجهه الكريم.';
+
+  @override
+  String get section1Title => '📍 في الميــــــــدان';
+
+  @override
+  String get section1 => 'حيثُ يلتقي الكودُ بالمجتمعِ والرسالة، لم تكن مهاراتي التقنية يوماً غايةً بحد ذاتها، بل';
+
+  @override
+  String get section1Highlight1 => 'برمجةٌ ذاتُ رسالة؛';
+
+  @override
+  String get section1End => 'تجلت في جمعية نوى للثقافة والفنون، حيثُ ساهمتُ في بناءِ منصاتٍ تحفظُ هويتنا وتمكنُ مبدعينا.';
+
+  @override
+  String get section2Title => '🔍 بفكرٌ يستشرفُ المستقبل';
+
+  @override
+  String get section2 => 'من خلال أبحاثٍ منشورةٍ واجهتُ فيها تحديات الذكاء الاصطناعي وإعادة بناء التعليم برؤية استراتيجية. ومن منطلق زكاة العلم، كانت';
+
+  @override
+  String get section2Highlight1 => 'صناعةُ الأثر (TOT)';
+
+  @override
+  String get section2End => 'نهجي لتطوير الإنسان وتمكين الفرق تحت أصعب الظروف.';
+
+  @override
+  String get section3Title => '⚡ مقدماُ حلولٌ تلامسُ الواقع';
+
+  @override
+  String get section3 => 'عبر تطوير تطبيقاتٍ لمؤسسات حيوية كشركة الكهرباء (Gedco)، نجحتُ في تحويل العمليات المعقدة إلى';
+
+  @override
+  String get section3Highlight1 => 'تجارب مستخدم ذكية';
+
+  @override
+  String get section3End => 'تخدمُ الآلاف يومياً بكلِ كفاءة.';
+
+  @override
+  String get section4Title => '🧭 بمبادئ انسانية ثابتة';
+
+  @override
+  String get section4 => 'توجّه رحلتي وتصنعُ قراراتي أعمل وهي';
+
+  @override
+  String get section4Highlight1 => 'بوصلتي';
+
+  @override
+  String get section4Middle => 'الحقيقية. تبدأُ من';
+
+  @override
+  String get section4Highlight2 => 'التعاطف؛';
+
+  @override
+  String get section4Middle2 => 'بفهمِ احتياجات الإنسان كجوهرٍ لكل عمل، وتمرُّ بـ';
+
+  @override
+  String get section4Highlight3 => 'الابتكار؛';
+
+  @override
+  String get section4Middle3 => 'لتحويل القيود إلى حلولٍ إبداعية.';
+
+  @override
+  String get excellence => '✨ وأتمسكُ دوماً بـ';
+
+  @override
+  String get excellenceHighlight1 => 'الإتقان؛';
+
+  @override
+  String get excellenceMiddle => 'لبناءِ منتجاتٍ برمجيةٍ متينةٍ ومصقولة، تدفعني نحو';
+
+  @override
+  String get excellenceHighlight2 => 'الاستمرارية والنمو؛';
+
+  @override
+  String get excellenceEnd => 'في التزامٍ راسخٍ بالتعلم مدى الحياة ومواكبة كل ما هو آت ♾️.';
+
+  @override
+  String get conclusionTitle => '👑 ختامُ المسكِ واليقين';
+
+  @override
+  String get conclusionStart => 'أمضي على خُطى';
+
+  @override
+  String get umar => 'الفاروقِ عُمر بن الخطاب،';
+
+  @override
+  String get conclusionMiddle => 'صحبةِ حبيبنا وقائدنا';
+
+  @override
+  String get mohammad => 'مُحمدٍ صلّى الله عليه وسلّم،';
+
+  @override
+  String get conclusionMiddle2 => 'مستلهماً من سيرتهم العطرة أنَّ عظمة الإنسان تُقاسُ بسعيه وأثره، وموقناً بصدق القول:';
+
+  @override
+  String get verse => '«وتحسبُ أنك جِرمٌ صغيرٌ.. وفيكَ انطوى العالمُ الأكبرُ»';
+
+  @override
+  String get conclusionEnd => ' فما أنا إلا سعيٌ بفضلِ الله، وقوةٌ باستمدادِ عونهِ؛ سائلاً المولى أن يفتحَ لي أبوابَ علمه، ويجعلَ عملي شاهداً لي، ونافعاً لخير البشرية.';
 }

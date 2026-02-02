@@ -107,11 +107,11 @@ abstract class AppLocalizations {
   /// **'SERVICES'**
   String get services;
 
-  /// No description provided for @skills.
+  /// No description provided for @hederSkills.
   ///
   /// In en, this message translates to:
   /// **'SKILLS'**
-  String get skills;
+  String get hederSkills;
 
   /// No description provided for @education.
   ///
@@ -164,13 +164,13 @@ abstract class AppLocalizations {
   /// No description provided for @najiAt.
   ///
   /// In en, this message translates to:
-  /// **'A-NAJI'**
+  /// **'Al-NAJI'**
   String get najiAt;
 
   /// No description provided for @abuMousa.
   ///
   /// In en, this message translates to:
-  /// **'BEN MOUSA'**
+  /// **'BIN MOUSA'**
   String get abuMousa;
 
   /// No description provided for @uxUiDesignerSpecialist.
@@ -2470,6 +2470,522 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'DISCOVER MY STORY'**
   String get discoverMyStory;
+
+  /// No description provided for @appTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'My Story: The Adventure So Far'**
+  String get appTitle;
+
+  /// No description provided for @greeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Mr.Eng. Al-Naji Bin Mousa'**
+  String get greeting;
+
+  /// No description provided for @quote1.
+  ///
+  /// In en, this message translates to:
+  /// **'If you spend your life collecting weapons, '**
+  String get quote1;
+
+  /// No description provided for @quote2.
+  ///
+  /// In en, this message translates to:
+  /// **'when will you fight?!'**
+  String get quote2;
+
+  /// No description provided for @title.
+  ///
+  /// In en, this message translates to:
+  /// **'🇵🇸 The Spark of Beginning: Birth of a Will'**
+  String get title;
+
+  /// No description provided for @birth.
+  ///
+  /// In en, this message translates to:
+  /// **'⏳ At the turn of the twentieth century toward its end, in the sixth year of its last decade (1996), I saw the light at a time when'**
+  String get birth;
+
+  /// No description provided for @palestinianDream.
+  ///
+  /// In en, this message translates to:
+  /// **'the Palestinian dream'**
+  String get palestinianDream;
+
+  /// No description provided for @birthEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'was breaching walls of impossibility. So I came into the world with the glimmer of the Stone Intifada 🇵🇸 in my eyes and the whispers of martyrs in my ears.'**
+  String get birthEnd;
+
+  /// No description provided for @identityTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'🔧 I am the faithful son'**
+  String get identityTitle;
+
+  /// No description provided for @palestine.
+  ///
+  /// In en, this message translates to:
+  /// **'of Palestine;'**
+  String get palestine;
+
+  /// No description provided for @identity.
+  ///
+  /// In en, this message translates to:
+  /// **'an engineer by science, and a resister by words.'**
+  String get identity;
+
+  /// No description provided for @identityEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'I see a battle in every letter, and victory in every equation.'**
+  String get identityEnd;
+
+  /// No description provided for @gaza.
+  ///
+  /// In en, this message translates to:
+  /// **'🏠 Gaza-born and proud,'**
+  String get gaza;
+
+  /// No description provided for @memory.
+  ///
+  /// In en, this message translates to:
+  /// **'I carry in my memory the fragrance of the soil of'**
+  String get memory;
+
+  /// No description provided for @beerSheba.
+  ///
+  /// In en, this message translates to:
+  /// **'Be\'er Sheba'**
+  String get beerSheba;
+
+  /// No description provided for @memoryEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'where ancestors rest upon the promise of return that has become the anthem of my life 🗝️.'**
+  String get memoryEnd;
+
+  /// No description provided for @survivor.
+  ///
+  /// In en, this message translates to:
+  /// **'🛡️ The survivor - by God\'s grace -'**
+  String get survivor;
+
+  /// No description provided for @survivorStory.
+  ///
+  /// In en, this message translates to:
+  /// **'from the fiercest conflicts of this land, I grew from the heart of the most beloved places to me:'**
+  String get survivorStory;
+
+  /// No description provided for @jerusalem.
+  ///
+  /// In en, this message translates to:
+  /// **'Jerusalem and its surroundings 🕌.'**
+  String get jerusalem;
+
+  /// No description provided for @mission.
+  ///
+  /// In en, this message translates to:
+  /// **'📖 ...To narrate to the world the story of an unbreakable people; building'**
+  String get mission;
+
+  /// No description provided for @engineering.
+  ///
+  /// In en, this message translates to:
+  /// **'with engineering'**
+  String get engineering;
+
+  /// No description provided for @missionMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **'what cannons have destroyed, and scripting'**
+  String get missionMiddle;
+
+  /// No description provided for @code.
+  ///
+  /// In en, this message translates to:
+  /// **'with code the dawn of the promised return 🌅.'**
+  String get code;
+
+  /// No description provided for @storyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'📜 The Chapter of Striving and Empowerment'**
+  String get storyTitle;
+
+  /// No description provided for @storyStart.
+  ///
+  /// In en, this message translates to:
+  /// **'My tale begins from my belief that'**
+  String get storyStart;
+
+  /// No description provided for @quranVerse1.
+  ///
+  /// In en, this message translates to:
+  /// **'Man can have nothing but what he strives for'**
+  String get quranVerse1;
+
+  /// No description provided for @storyMiddle1.
+  ///
+  /// In en, this message translates to:
+  /// **'; and that adversities are but refinement of character, and boundaries are but illusions that fade before the greatness of reliance on God and high ambition. '**
+  String get storyMiddle1;
+
+  /// No description provided for @storyMiddlee.
+  ///
+  /// In en, this message translates to:
+  /// **'My journey was never mere academic milestones, but a voyage to craft an integrated vision that began to take shape in Gaza, where challenges transform will into innovation.'**
+  String get storyMiddlee;
+
+  /// No description provided for @journey.
+  ///
+  /// In en, this message translates to:
+  /// **'Today, after earning'**
+  String get journey;
+
+  /// No description provided for @degrees.
+  ///
+  /// In en, this message translates to:
+  /// **'a Master\'s in Business Administration (MBA) and before that Software Engineering,'**
+  String get degrees;
+
+  /// No description provided for @journeyMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **'I stand fully prepared to embark on scientific research at the level of'**
+  String get journeyMiddle;
+
+  /// No description provided for @phd.
+  ///
+  /// In en, this message translates to:
+  /// **'a Doctoral degree'**
+  String get phd;
+
+  /// No description provided for @journeyEnd.
+  ///
+  /// In en, this message translates to:
+  /// **', driven by a sincere desire to develop technological and administrative solutions that transcend traditional boundaries.'**
+  String get journeyEnd;
+
+  /// No description provided for @techJourney.
+  ///
+  /// In en, this message translates to:
+  /// **'My technical journey, which began in 2014 in'**
+  String get techJourney;
+
+  /// No description provided for @mechatronics.
+  ///
+  /// In en, this message translates to:
+  /// **'Mechatronics Engineering'**
+  String get mechatronics;
+
+  /// No description provided for @techJourneyMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **', was the first laboratory where I dealt with system complexities, before my passion moved toward'**
+  String get techJourneyMiddle;
+
+  /// No description provided for @software.
+  ///
+  /// In en, this message translates to:
+  /// **'Software Engineering (Class of 2020)'**
+  String get software;
+
+  /// No description provided for @techJourneyEnd.
+  ///
+  /// In en, this message translates to:
+  /// **' to fuse engineering precision into digital molds.'**
+  String get techJourneyEnd;
+
+  /// No description provided for @freelance.
+  ///
+  /// In en, this message translates to:
+  /// **'The theoretical aspect wasn\'t enough for me; so I launched into'**
+  String get freelance;
+
+  /// No description provided for @freelanceWorld.
+  ///
+  /// In en, this message translates to:
+  /// **'the world of freelancing'**
+  String get freelanceWorld;
+
+  /// No description provided for @freelanceMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **' since 2018, where I designed and'**
+  String get freelanceMiddle;
+
+  /// No description provided for @skills.
+  ///
+  /// In en, this message translates to:
+  /// **'developed User Experience (UX/UI) and Flutter applications'**
+  String get skills;
+
+  /// No description provided for @freelanceEnd.
+  ///
+  /// In en, this message translates to:
+  /// **' for major projects, transforming user needs into intelligent digital interfaces serving thousands of people.'**
+  String get freelanceEnd;
+
+  /// No description provided for @experience.
+  ///
+  /// In en, this message translates to:
+  /// **'This professional accumulation, supported by global training programs with'**
+  String get experience;
+
+  /// No description provided for @google.
+  ///
+  /// In en, this message translates to:
+  /// **'Google'**
+  String get google;
+
+  /// No description provided for @experienceMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **' and'**
+  String get experienceMiddle;
+
+  /// No description provided for @training.
+  ///
+  /// In en, this message translates to:
+  /// **'Coaching experience and Training of Trainers (TOT)'**
+  String get training;
+
+  /// No description provided for @experienceEnd.
+  ///
+  /// In en, this message translates to:
+  /// **', enabled me to lead teams and transfer knowledge effectively under the harshest conditions. The Master\'s was the bridge linking technical precision with strategic vision, honing my ability for rigorous scientific research and resource management with a comprehensive analytical perspective.'**
+  String get experienceEnd;
+
+  /// No description provided for @phdGoal.
+  ///
+  /// In en, this message translates to:
+  /// **'My aspiration today to obtain'**
+  String get phdGoal;
+
+  /// No description provided for @phdDegree.
+  ///
+  /// In en, this message translates to:
+  /// **'a Doctoral degree'**
+  String get phdDegree;
+
+  /// No description provided for @phdGoalMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **' is a systematic pursuit to contribute to the global scientific movement, armed with exceptional ability to work under pressure, administrative maturity, and firm conviction that whoever seeks God\'s help finds the impossible made possible. In conclusion, I proceed holding fast to His strong rope, convinced in my heart that'**
+  String get phdGoalMiddle;
+
+  /// No description provided for @quranVerse2.
+  ///
+  /// In en, this message translates to:
+  /// **'My success is only by Allah. In Him I trust, and to Him I turn'**
+  String get quranVerse2;
+
+  /// No description provided for @phdGoalEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'; for knowledge is His grace, striving is His facilitation, and impact is His blessing, asking the Almighty to open for me the doors of His bounty, and make my work purely beneficial for His noble countenance.'**
+  String get phdGoalEnd;
+
+  /// No description provided for @section1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'📍 In the Arena'**
+  String get section1Title;
+
+  /// No description provided for @section1.
+  ///
+  /// In en, this message translates to:
+  /// **'where code meets community and mission, my technical skills were never an end in themselves, but'**
+  String get section1;
+
+  /// No description provided for @section1Highlight1.
+  ///
+  /// In en, this message translates to:
+  /// **'programming with a message;'**
+  String get section1Highlight1;
+
+  /// No description provided for @section1End.
+  ///
+  /// In en, this message translates to:
+  /// **'manifested in the Nawa Association for Culture and Arts, where I contributed to building platforms that preserve our identity and empower our creators.'**
+  String get section1End;
+
+  /// No description provided for @section2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'🔍 With a Vision that Foresees the Future'**
+  String get section2Title;
+
+  /// No description provided for @section2.
+  ///
+  /// In en, this message translates to:
+  /// **'through published research where I faced AI challenges and educational reconstruction with strategic vision. From the perspective of \'Zakat of Knowledge,\''**
+  String get section2;
+
+  /// No description provided for @section2Highlight1.
+  ///
+  /// In en, this message translates to:
+  /// **'impact-making (TOT)'**
+  String get section2Highlight1;
+
+  /// No description provided for @section2End.
+  ///
+  /// In en, this message translates to:
+  /// **'was my approach to human development and team empowerment under the most difficult circumstances.'**
+  String get section2End;
+
+  /// No description provided for @section3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'⚡ Providing Solutions that Touch Reality'**
+  String get section3Title;
+
+  /// No description provided for @section3.
+  ///
+  /// In en, this message translates to:
+  /// **'by developing applications for vital institutions like Gedco Electricity Company, I successfully transformed complex operations into'**
+  String get section3;
+
+  /// No description provided for @section3Highlight1.
+  ///
+  /// In en, this message translates to:
+  /// **'intelligent user experiences'**
+  String get section3Highlight1;
+
+  /// No description provided for @section3End.
+  ///
+  /// In en, this message translates to:
+  /// **'serving thousands daily with full efficiency.'**
+  String get section3End;
+
+  /// No description provided for @section4Title.
+  ///
+  /// In en, this message translates to:
+  /// **'🧭 With Steadfast Human Principles'**
+  String get section4Title;
+
+  /// No description provided for @section4.
+  ///
+  /// In en, this message translates to:
+  /// **'that guide my journey and shape my decisions, working as'**
+  String get section4;
+
+  /// No description provided for @section4Highlight1.
+  ///
+  /// In en, this message translates to:
+  /// **'my compass'**
+  String get section4Highlight1;
+
+  /// No description provided for @section4Middle.
+  ///
+  /// In en, this message translates to:
+  /// **'. It begins with'**
+  String get section4Middle;
+
+  /// No description provided for @section4Highlight2.
+  ///
+  /// In en, this message translates to:
+  /// **'Empathy;'**
+  String get section4Highlight2;
+
+  /// No description provided for @section4Middle2.
+  ///
+  /// In en, this message translates to:
+  /// **'understanding human needs as the core of every work, and passes through'**
+  String get section4Middle2;
+
+  /// No description provided for @section4Highlight3.
+  ///
+  /// In en, this message translates to:
+  /// **'Innovation;'**
+  String get section4Highlight3;
+
+  /// No description provided for @section4Middle3.
+  ///
+  /// In en, this message translates to:
+  /// **'to transform constraints into creative solutions.'**
+  String get section4Middle3;
+
+  /// No description provided for @excellence.
+  ///
+  /// In en, this message translates to:
+  /// **'✨ And I always cling to'**
+  String get excellence;
+
+  /// No description provided for @excellenceHighlight1.
+  ///
+  /// In en, this message translates to:
+  /// **'Excellence;'**
+  String get excellenceHighlight1;
+
+  /// No description provided for @excellenceMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **'to build robust and polished software products, driving me toward'**
+  String get excellenceMiddle;
+
+  /// No description provided for @excellenceHighlight2.
+  ///
+  /// In en, this message translates to:
+  /// **'Continuity and Growth;'**
+  String get excellenceHighlight2;
+
+  /// No description provided for @excellenceEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'in a firm commitment to lifelong learning and keeping pace with everything to come ♾️.'**
+  String get excellenceEnd;
+
+  /// No description provided for @conclusionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'👑 The Conclusion of Musk and Certainty'**
+  String get conclusionTitle;
+
+  /// No description provided for @conclusionStart.
+  ///
+  /// In en, this message translates to:
+  /// **'I walk in the footsteps of'**
+  String get conclusionStart;
+
+  /// No description provided for @umar.
+  ///
+  /// In en, this message translates to:
+  /// **'Al-Farooq Umar ibn Al-Khattab,'**
+  String get umar;
+
+  /// No description provided for @conclusionMiddle.
+  ///
+  /// In en, this message translates to:
+  /// **'in the company of our beloved and leader'**
+  String get conclusionMiddle;
+
+  /// No description provided for @mohammad.
+  ///
+  /// In en, this message translates to:
+  /// **'Muhammad, peace be upon him,'**
+  String get mohammad;
+
+  /// No description provided for @conclusionMiddle2.
+  ///
+  /// In en, this message translates to:
+  /// **'drawing inspiration from their noble biographies that human greatness is measured by one\'s striving and impact, and convinced of the truth of the saying:'**
+  String get conclusionMiddle2;
+
+  /// No description provided for @verse.
+  ///
+  /// In en, this message translates to:
+  /// **'«You think you are a small body... Yet within you is enfolded the entire universe»'**
+  String get verse;
+
+  /// No description provided for @conclusionEnd.
+  ///
+  /// In en, this message translates to:
+  /// **' So I am nothing but striving by God\'s grace, and strength through seeking His help; asking the Almighty to open for me the doors of His knowledge, and make my work a witness for me, and beneficial for the good of humanity.'**
+  String get conclusionEnd;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

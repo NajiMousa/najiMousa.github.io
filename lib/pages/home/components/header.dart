@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 // import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:web_portfolio/models/header_item.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/globals.dart';
@@ -487,7 +488,7 @@ class _HeaderState extends State<Header> {
           },
         ),
         HeaderItem(
-          title: AppLocalizations.of(context)!.skills,
+          title: AppLocalizations.of(context)!.hederSkills,
           onTap: () {
             Globals.scaffoldKey.currentState?.closeEndDrawer();
             widget.onItemSelected(HeaderSection.skills);
@@ -522,20 +523,20 @@ class _HeaderState extends State<Header> {
         //   title: AppLocalizations.of(context)!.blogs,
         //   onTap: () {},
         // ),
-        HeaderItem(
-          title: AppLocalizations.of(context)!.creativeLab,
-          onTap: () {
-            Globals.scaffoldKey.currentState?.closeEndDrawer();
-            widget.onItemSelected(HeaderSection.creativeLab);
-
-          },
-        ),
+        // HeaderItem(
+        //   title: AppLocalizations.of(context)!.creativeLab,
+        //   onTap: () {
+        //     Globals.scaffoldKey.currentState?.closeEndDrawer();
+        //     widget.onItemSelected(HeaderSection.creativeLab);
+        //
+        //   },
+        // ),
         HeaderItem(
           title: AppLocalizations.of(context)!.hireMe,
           onTap: () {
             Globals.scaffoldKey.currentState?.closeEndDrawer();
-            widget.onItemSelected(HeaderSection.hireMe);
-
+            // widget.onItemSelected(HeaderSection.hireMe);
+            _handleTap();
           },
           isButton: true,
         ),
@@ -802,6 +803,17 @@ class _HeaderState extends State<Header> {
     );
   }
 
+  Future<void> _handleTap() async {
+    final Uri uri = Uri.parse('https://wa.me/972595192140');
+
+    if (!await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw 'Could not launch $uri';
+    }
+  }
+
 }
 
 class HeaderItemWidget extends StatefulWidget {
@@ -845,113 +857,115 @@ class _HeaderItemWidgetState extends State<HeaderItemWidget> {
       );
     }
 
-    if (widget.item.title == AppLocalizations.of(context)!.creativeLab) {
-      return Container(
-        margin: EdgeInsets.symmetric(horizontal: 5.0),
-        child: PopupMenuButton<String>(
-          color: kAccentColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-          ),
-          offset: const Offset(0, 30),
-          child: Row(
-            children: [
-              Text(
-                widget.item.title!,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 12.5,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(width: 4),
-              const Icon(
-                Icons.arrow_drop_down,
-                color: Colors.white,
-                size: 14,
-              ),
-            ],
-          ),
-          onSelected: (value) {
-            if (value == "designChallenges") {
-              // TODO: Navigate to Design Challenges page
-            } else if (value == "figmaChallenges") {
-              // TODO: Navigate to Figma Challenges page
-            }
-          },
-          itemBuilder: (context) => [
-            PopupMenuItem(
-              value: "designChallenges",
-              child: Padding(
-                padding: const EdgeInsets.symmetric( horizontal: 6.0),
-                child:Row(
-                  children: [
-                    Text(
-                      AppLocalizations.of(context)!.designerChallenge,
-                      style: GoogleFonts.ibmPlexSansArabic(
-                        color: kBackgroundColor,
-                        fontWeight: FontWeight.bold,
-                      ),),
-                    Spacer(),
-                    const Icon(
-                      Icons.arrow_right,
-                      color: kBackgroundColor,
-                      size: 18,
-                    )
-                  ],
-                ),
-              ),
-            ),
-            PopupMenuItem(
-              value: "figmaChallenges",
-              child: Padding(
-                padding: const EdgeInsets.symmetric( horizontal: 6.0),
-                child: Row(
-                  children: [
-                    Text(
-                      AppLocalizations.of(context)!.figmaChallenge,
-                      style: GoogleFonts.ibmPlexSansArabic(
-                        color: kBackgroundColor,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Spacer(),
-                    const Icon(
-                      Icons.arrow_right,
-                      color: kBackgroundColor,
-                      size: 18,
-                    )
-                  ],
-                ),
-              ),
-            ),
-            PopupMenuItem(
-              value: "flutterChallenges",
-              child: Padding(
-                padding: const EdgeInsets.symmetric( horizontal: 6.0),
-                child: Row(
-                  children: [
-                    Text(
-                      AppLocalizations.of(context)!.flutterChallenge,
-                      style: GoogleFonts.ibmPlexSansArabic(
-                        color: kBackgroundColor,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Spacer(),
-                    const Icon(
-                      Icons.arrow_right,
-                      color: kBackgroundColor,
-                      size: 18,
-                    )
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      );
-    }
+    //// todo: Future tips
+
+    // if (widget.item.title == AppLocalizations.of(context)!.creativeLab) {
+    //   return Container(
+    //     margin: EdgeInsets.symmetric(horizontal: 5.0),
+    //     child: PopupMenuButton<String>(
+    //       color: kAccentColor,
+    //       shape: RoundedRectangleBorder(
+    //         borderRadius: BorderRadius.circular(10),
+    //       ),
+    //       offset: const Offset(0, 30),
+    //       child: Row(
+    //         children: [
+    //           Text(
+    //             widget.item.title!,
+    //             style: TextStyle(
+    //               color: Colors.white,
+    //               fontSize: 12.5,
+    //               fontWeight: FontWeight.bold,
+    //             ),
+    //           ),
+    //           const SizedBox(width: 4),
+    //           const Icon(
+    //             Icons.arrow_drop_down,
+    //             color: Colors.white,
+    //             size: 14,
+    //           ),
+    //         ],
+    //       ),
+    //       onSelected: (value) {
+    //         if (value == "designChallenges") {
+    //           // TODO: Navigate to Design Challenges page
+    //         } else if (value == "figmaChallenges") {
+    //           // TODO: Navigate to Figma Challenges page
+    //         }
+    //       },
+    //       itemBuilder: (context) => [
+    //         PopupMenuItem(
+    //           value: "designChallenges",
+    //           child: Padding(
+    //             padding: const EdgeInsets.symmetric( horizontal: 6.0),
+    //             child:Row(
+    //               children: [
+    //                 Text(
+    //                   AppLocalizations.of(context)!.designerChallenge,
+    //                   style: GoogleFonts.ibmPlexSansArabic(
+    //                     color: kBackgroundColor,
+    //                     fontWeight: FontWeight.bold,
+    //                   ),),
+    //                 Spacer(),
+    //                 const Icon(
+    //                   Icons.arrow_right,
+    //                   color: kBackgroundColor,
+    //                   size: 18,
+    //                 )
+    //               ],
+    //             ),
+    //           ),
+    //         ),
+    //         PopupMenuItem(
+    //           value: "figmaChallenges",
+    //           child: Padding(
+    //             padding: const EdgeInsets.symmetric( horizontal: 6.0),
+    //             child: Row(
+    //               children: [
+    //                 Text(
+    //                   AppLocalizations.of(context)!.figmaChallenge,
+    //                   style: GoogleFonts.ibmPlexSansArabic(
+    //                     color: kBackgroundColor,
+    //                     fontWeight: FontWeight.bold,
+    //                   ),
+    //                 ),
+    //                 Spacer(),
+    //                 const Icon(
+    //                   Icons.arrow_right,
+    //                   color: kBackgroundColor,
+    //                   size: 18,
+    //                 )
+    //               ],
+    //             ),
+    //           ),
+    //         ),
+    //         PopupMenuItem(
+    //           value: "flutterChallenges",
+    //           child: Padding(
+    //             padding: const EdgeInsets.symmetric( horizontal: 6.0),
+    //             child: Row(
+    //               children: [
+    //                 Text(
+    //                   AppLocalizations.of(context)!.flutterChallenge,
+    //                   style: GoogleFonts.ibmPlexSansArabic(
+    //                     color: kBackgroundColor,
+    //                     fontWeight: FontWeight.bold,
+    //                   ),
+    //                 ),
+    //                 Spacer(),
+    //                 const Icon(
+    //                   Icons.arrow_right,
+    //                   color: kBackgroundColor,
+    //                   size: 18,
+    //                 )
+    //               ],
+    //             ),
+    //           ),
+    //         ),
+    //       ],
+    //     ),
+    //   );
+    // }
 
     // حالة العناصر العادية (غير زر)
     return MouseRegion(

@@ -1,7 +1,7 @@
 {
   "home": "HOME",
   "services": "SERVICES",
-  "skills": "SKILLS",
+  "hederSkills": "SKILLS",
   "education": "EDUCATION",
   "portfolio": "PORTFOLIO",
   "testimonials": "TESTIMONIALS",
@@ -11,8 +11,8 @@
 
   "uxuiProductDesign": "🎨 UXUI PRODUCT DESIGN",
   "flutterAppDeveloper": "🚀 FLUTTER APP DEVELOPER",
-  "najiAt": "A-NAJI",
-  "abuMousa": "BEN MOUSA",
+  "najiAt": "Al-NAJI",
+  "abuMousa": "BIN MOUSA",
   "uxUiDesignerSpecialist": "UX/UI Designer Specialist, based in Palestine  🇵🇸",
   "flutterFullStackDeveloper": "Flutter Full-stack developer, based in Palestine 🇵🇸",
   "needCustomWebsiteOrAppDesign": "Need a custom website or app Design?",
@@ -519,10 +519,111 @@
       "blogLetsDiscuss": "Let’s discuss how this concept could work for your project, timeline, and budget.",
       "blogDiscussOnWhatsapp": "Discuss on WhatsApp",
       "blogWhatsappMessage": "Hi 👋 I just read your article \"$articleTitle\" and would like to discuss how this idea could work for my app.",
-      "discoverMyStory": "DISCOVER MY STORY"
+      "discoverMyStory": "DISCOVER MY STORY",
 
+      "appTitle": "My Story: The Adventure So Far",
 
+      "greeting": "Mr.Eng. Al-Naji Bin Mousa",
+      "quote1": "If you spend your life collecting weapons, ",
+      "quote2": "when will you fight?!",
 
+      "title": "🇵🇸 The Spark of Beginning: Birth of a Will",
+      "birth": "⏳ At the turn of the twentieth century toward its end, in the sixth year of its last decade (1996), I saw the light at a time when",
+      "palestinianDream": "the Palestinian dream",
+      "birthEnd": "was breaching walls of impossibility. So I came into the world with the glimmer of the Stone Intifada 🇵🇸 in my eyes and the whispers of martyrs in my ears.",
 
+      "identityTitle": "🔧 I am the faithful son",
+      "palestine": "of Palestine;",
+      "identity": "an engineer by science, and a resister by words.",
+      "identityEnd": "I see a battle in every letter, and victory in every equation.",
+
+      "gaza": "🏠 Gaza-born and proud,",
+      "memory": "I carry in my memory the fragrance of the soil of",
+      "beerSheba": "Be'er Sheba",
+      "memoryEnd": "where ancestors rest upon the promise of return that has become the anthem of my life 🗝️.",
+
+      "survivor": "🛡️ The survivor - by God's grace -",
+      "survivorStory": "from the fiercest conflicts of this land, I grew from the heart of the most beloved places to me:",
+      "jerusalem": "Jerusalem and its surroundings 🕌.",
+
+      "mission": "📖 ...To narrate to the world the story of an unbreakable people; building",
+      "engineering": "with engineering",
+      "missionMiddle": "what cannons have destroyed, and scripting",
+      "code": "with code the dawn of the promised return 🌅.",
+
+      "storyTitle": "📜 The Chapter of Striving and Empowerment",
+      "storyStart": "My tale begins from my belief that",
+      "quranVerse1": "Man can have nothing but what he strives for",
+      "storyMiddle1": "; and that adversities are but refinement of character, and boundaries are but illusions that fade before the greatness of reliance on God and high ambition. ",
+      "storyMiddlee": "My journey was never mere academic milestones, but a voyage to craft an integrated vision that began to take shape in Gaza, where challenges transform will into innovation.",
+
+      "journey": "Today, after earning",
+      "degrees": "a Master's in Business Administration (MBA) and before that Software Engineering,",
+      "journeyMiddle": "I stand fully prepared to embark on scientific research at the level of",
+      "phd": "a Doctoral degree",
+      "journeyEnd": ", driven by a sincere desire to develop technological and administrative solutions that transcend traditional boundaries.",
+
+      "techJourney": "My technical journey, which began in 2014 in",
+      "mechatronics": "Mechatronics Engineering",
+      "techJourneyMiddle": ", was the first laboratory where I dealt with system complexities, before my passion moved toward",
+      "software": "Software Engineering (Class of 2020)",
+      "techJourneyEnd": " to fuse engineering precision into digital molds.",
+
+      "freelance": "The theoretical aspect wasn't enough for me; so I launched into",
+      "freelanceWorld": "the world of freelancing",
+      "freelanceMiddle": " since 2018, where I designed and",
+      "skills": "developed User Experience (UX/UI) and Flutter applications",
+      "freelanceEnd": " for major projects, transforming user needs into intelligent digital interfaces serving thousands of people.",
+
+      "experience": "This professional accumulation, supported by global training programs with",
+      "google": "Google",
+      "experienceMiddle": " and",
+      "training": "Coaching experience and Training of Trainers (TOT)",
+      "experienceEnd": ", enabled me to lead teams and transfer knowledge effectively under the harshest conditions. The Master's was the bridge linking technical precision with strategic vision, honing my ability for rigorous scientific research and resource management with a comprehensive analytical perspective.",
+
+      "phdGoal": "My aspiration today to obtain",
+      "phdDegree": "a Doctoral degree",
+      "phdGoalMiddle": " is a systematic pursuit to contribute to the global scientific movement, armed with exceptional ability to work under pressure, administrative maturity, and firm conviction that whoever seeks God's help finds the impossible made possible. In conclusion, I proceed holding fast to His strong rope, convinced in my heart that",
+      "quranVerse2": "My success is only by Allah. In Him I trust, and to Him I turn",
+      "phdGoalEnd": "; for knowledge is His grace, striving is His facilitation, and impact is His blessing, asking the Almighty to open for me the doors of His bounty, and make my work purely beneficial for His noble countenance.",
+
+      "section1Title": "📍 In the Arena",
+      "section1": "where code meets community and mission, my technical skills were never an end in themselves, but",
+      "section1Highlight1": "programming with a message;",
+      "section1End": "manifested in the Nawa Association for Culture and Arts, where I contributed to building platforms that preserve our identity and empower our creators.",
+
+      "section2Title": "🔍 With a Vision that Foresees the Future",
+      "section2": "through published research where I faced AI challenges and educational reconstruction with strategic vision. From the perspective of 'Zakat of Knowledge,'",
+      "section2Highlight1": "impact-making (TOT)",
+      "section2End": "was my approach to human development and team empowerment under the most difficult circumstances.",
+
+      "section3Title": "⚡ Providing Solutions that Touch Reality",
+      "section3": "by developing applications for vital institutions like Gedco Electricity Company, I successfully transformed complex operations into",
+      "section3Highlight1": "intelligent user experiences",
+      "section3End": "serving thousands daily with full efficiency.",
+
+      "section4Title": "🧭 With Steadfast Human Principles",
+      "section4": "that guide my journey and shape my decisions, working as",
+      "section4Highlight1": "my compass",
+      "section4Middle": ". It begins with",
+      "section4Highlight2": "Empathy;",
+      "section4Middle2": "understanding human needs as the core of every work, and passes through",
+      "section4Highlight3": "Innovation;",
+      "section4Middle3": "to transform constraints into creative solutions.",
+
+      "excellence": "✨ And I always cling to",
+      "excellenceHighlight1": "Excellence;",
+      "excellenceMiddle": "to build robust and polished software products, driving me toward",
+      "excellenceHighlight2": "Continuity and Growth;",
+      "excellenceEnd": "in a firm commitment to lifelong learning and keeping pace with everything to come ♾️.",
+
+      "conclusionTitle": "👑 The Conclusion of Musk and Certainty",
+      "conclusionStart": "I walk in the footsteps of",
+      "umar": "Al-Farooq Umar ibn Al-Khattab,",
+      "conclusionMiddle": "in the company of our beloved and leader",
+      "mohammad": "Muhammad, peace be upon him,",
+      "conclusionMiddle2": "drawing inspiration from their noble biographies that human greatness is measured by one's striving and impact, and convinced of the truth of the saying:",
+      "verse": "«You think you are a small body... Yet within you is enfolded the entire universe»",
+      "conclusionEnd": " So I am nothing but striving by God's grace, and strength through seeking His help; asking the Almighty to open for me the doors of His knowledge, and make my work a witness for me, and beneficial for the good of humanity."
 }
 

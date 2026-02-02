@@ -345,6 +345,7 @@ class _HomeState extends State<Home> {
                             print('object006');
                             break;
                           case HeaderSection.hireMe:
+                            _handleTap();
                             scrollTo(hireMeKey);
                             print('object007');
                             break;
@@ -536,5 +537,16 @@ class _HomeState extends State<Home> {
       //   ),
       // ),
     );
+  }
+
+  Future<void> _handleTap() async {
+    final Uri uri = Uri.parse('https://wa.me/972595192140');
+
+    if (!await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw 'Could not launch $uri';
+    }
   }
 }

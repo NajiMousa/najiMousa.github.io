@@ -15,7 +15,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get services => 'SERVICES';
 
   @override
-  String get skills => 'SKILLS';
+  String get hederSkills => 'SKILLS';
 
   @override
   String get education => 'EDUCATION';
@@ -42,10 +42,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get flutterAppDeveloper => '🚀 FLUTTER APP DEVELOPER';
 
   @override
-  String get najiAt => 'A-NAJI';
+  String get najiAt => 'Al-NAJI';
 
   @override
-  String get abuMousa => 'BEN MOUSA';
+  String get abuMousa => 'BIN MOUSA';
 
   @override
   String get uxUiDesignerSpecialist => 'UX/UI Designer Specialist, based in Palestine  🇵🇸';
@@ -1195,4 +1195,262 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get discoverMyStory => 'DISCOVER MY STORY';
+
+  @override
+  String get appTitle => 'My Story: The Adventure So Far';
+
+  @override
+  String get greeting => 'Mr.Eng. Al-Naji Bin Mousa';
+
+  @override
+  String get quote1 => 'If you spend your life collecting weapons, ';
+
+  @override
+  String get quote2 => 'when will you fight?!';
+
+  @override
+  String get title => '🇵🇸 The Spark of Beginning: Birth of a Will';
+
+  @override
+  String get birth => '⏳ At the turn of the twentieth century toward its end, in the sixth year of its last decade (1996), I saw the light at a time when';
+
+  @override
+  String get palestinianDream => 'the Palestinian dream';
+
+  @override
+  String get birthEnd => 'was breaching walls of impossibility. So I came into the world with the glimmer of the Stone Intifada 🇵🇸 in my eyes and the whispers of martyrs in my ears.';
+
+  @override
+  String get identityTitle => '🔧 I am the faithful son';
+
+  @override
+  String get palestine => 'of Palestine;';
+
+  @override
+  String get identity => 'an engineer by science, and a resister by words.';
+
+  @override
+  String get identityEnd => 'I see a battle in every letter, and victory in every equation.';
+
+  @override
+  String get gaza => '🏠 Gaza-born and proud,';
+
+  @override
+  String get memory => 'I carry in my memory the fragrance of the soil of';
+
+  @override
+  String get beerSheba => 'Be\'er Sheba';
+
+  @override
+  String get memoryEnd => 'where ancestors rest upon the promise of return that has become the anthem of my life 🗝️.';
+
+  @override
+  String get survivor => '🛡️ The survivor - by God\'s grace -';
+
+  @override
+  String get survivorStory => 'from the fiercest conflicts of this land, I grew from the heart of the most beloved places to me:';
+
+  @override
+  String get jerusalem => 'Jerusalem and its surroundings 🕌.';
+
+  @override
+  String get mission => '📖 ...To narrate to the world the story of an unbreakable people; building';
+
+  @override
+  String get engineering => 'with engineering';
+
+  @override
+  String get missionMiddle => 'what cannons have destroyed, and scripting';
+
+  @override
+  String get code => 'with code the dawn of the promised return 🌅.';
+
+  @override
+  String get storyTitle => '📜 The Chapter of Striving and Empowerment';
+
+  @override
+  String get storyStart => 'My tale begins from my belief that';
+
+  @override
+  String get quranVerse1 => 'Man can have nothing but what he strives for';
+
+  @override
+  String get storyMiddle1 => '; and that adversities are but refinement of character, and boundaries are but illusions that fade before the greatness of reliance on God and high ambition. ';
+
+  @override
+  String get storyMiddlee => 'My journey was never mere academic milestones, but a voyage to craft an integrated vision that began to take shape in Gaza, where challenges transform will into innovation.';
+
+  @override
+  String get journey => 'Today, after earning';
+
+  @override
+  String get degrees => 'a Master\'s in Business Administration (MBA) and before that Software Engineering,';
+
+  @override
+  String get journeyMiddle => 'I stand fully prepared to embark on scientific research at the level of';
+
+  @override
+  String get phd => 'a Doctoral degree';
+
+  @override
+  String get journeyEnd => ', driven by a sincere desire to develop technological and administrative solutions that transcend traditional boundaries.';
+
+  @override
+  String get techJourney => 'My technical journey, which began in 2014 in';
+
+  @override
+  String get mechatronics => 'Mechatronics Engineering';
+
+  @override
+  String get techJourneyMiddle => ', was the first laboratory where I dealt with system complexities, before my passion moved toward';
+
+  @override
+  String get software => 'Software Engineering (Class of 2020)';
+
+  @override
+  String get techJourneyEnd => ' to fuse engineering precision into digital molds.';
+
+  @override
+  String get freelance => 'The theoretical aspect wasn\'t enough for me; so I launched into';
+
+  @override
+  String get freelanceWorld => 'the world of freelancing';
+
+  @override
+  String get freelanceMiddle => ' since 2018, where I designed and';
+
+  @override
+  String get skills => 'developed User Experience (UX/UI) and Flutter applications';
+
+  @override
+  String get freelanceEnd => ' for major projects, transforming user needs into intelligent digital interfaces serving thousands of people.';
+
+  @override
+  String get experience => 'This professional accumulation, supported by global training programs with';
+
+  @override
+  String get google => 'Google';
+
+  @override
+  String get experienceMiddle => ' and';
+
+  @override
+  String get training => 'Coaching experience and Training of Trainers (TOT)';
+
+  @override
+  String get experienceEnd => ', enabled me to lead teams and transfer knowledge effectively under the harshest conditions. The Master\'s was the bridge linking technical precision with strategic vision, honing my ability for rigorous scientific research and resource management with a comprehensive analytical perspective.';
+
+  @override
+  String get phdGoal => 'My aspiration today to obtain';
+
+  @override
+  String get phdDegree => 'a Doctoral degree';
+
+  @override
+  String get phdGoalMiddle => ' is a systematic pursuit to contribute to the global scientific movement, armed with exceptional ability to work under pressure, administrative maturity, and firm conviction that whoever seeks God\'s help finds the impossible made possible. In conclusion, I proceed holding fast to His strong rope, convinced in my heart that';
+
+  @override
+  String get quranVerse2 => 'My success is only by Allah. In Him I trust, and to Him I turn';
+
+  @override
+  String get phdGoalEnd => '; for knowledge is His grace, striving is His facilitation, and impact is His blessing, asking the Almighty to open for me the doors of His bounty, and make my work purely beneficial for His noble countenance.';
+
+  @override
+  String get section1Title => '📍 In the Arena';
+
+  @override
+  String get section1 => 'where code meets community and mission, my technical skills were never an end in themselves, but';
+
+  @override
+  String get section1Highlight1 => 'programming with a message;';
+
+  @override
+  String get section1End => 'manifested in the Nawa Association for Culture and Arts, where I contributed to building platforms that preserve our identity and empower our creators.';
+
+  @override
+  String get section2Title => '🔍 With a Vision that Foresees the Future';
+
+  @override
+  String get section2 => 'through published research where I faced AI challenges and educational reconstruction with strategic vision. From the perspective of \'Zakat of Knowledge,\'';
+
+  @override
+  String get section2Highlight1 => 'impact-making (TOT)';
+
+  @override
+  String get section2End => 'was my approach to human development and team empowerment under the most difficult circumstances.';
+
+  @override
+  String get section3Title => '⚡ Providing Solutions that Touch Reality';
+
+  @override
+  String get section3 => 'by developing applications for vital institutions like Gedco Electricity Company, I successfully transformed complex operations into';
+
+  @override
+  String get section3Highlight1 => 'intelligent user experiences';
+
+  @override
+  String get section3End => 'serving thousands daily with full efficiency.';
+
+  @override
+  String get section4Title => '🧭 With Steadfast Human Principles';
+
+  @override
+  String get section4 => 'that guide my journey and shape my decisions, working as';
+
+  @override
+  String get section4Highlight1 => 'my compass';
+
+  @override
+  String get section4Middle => '. It begins with';
+
+  @override
+  String get section4Highlight2 => 'Empathy;';
+
+  @override
+  String get section4Middle2 => 'understanding human needs as the core of every work, and passes through';
+
+  @override
+  String get section4Highlight3 => 'Innovation;';
+
+  @override
+  String get section4Middle3 => 'to transform constraints into creative solutions.';
+
+  @override
+  String get excellence => '✨ And I always cling to';
+
+  @override
+  String get excellenceHighlight1 => 'Excellence;';
+
+  @override
+  String get excellenceMiddle => 'to build robust and polished software products, driving me toward';
+
+  @override
+  String get excellenceHighlight2 => 'Continuity and Growth;';
+
+  @override
+  String get excellenceEnd => 'in a firm commitment to lifelong learning and keeping pace with everything to come ♾️.';
+
+  @override
+  String get conclusionTitle => '👑 The Conclusion of Musk and Certainty';
+
+  @override
+  String get conclusionStart => 'I walk in the footsteps of';
+
+  @override
+  String get umar => 'Al-Farooq Umar ibn Al-Khattab,';
+
+  @override
+  String get conclusionMiddle => 'in the company of our beloved and leader';
+
+  @override
+  String get mohammad => 'Muhammad, peace be upon him,';
+
+  @override
+  String get conclusionMiddle2 => 'drawing inspiration from their noble biographies that human greatness is measured by one\'s striving and impact, and convinced of the truth of the saying:';
+
+  @override
+  String get verse => '«You think you are a small body... Yet within you is enfolded the entire universe»';
+
+  @override
+  String get conclusionEnd => ' So I am nothing but striving by God\'s grace, and strength through seeking His help; asking the Almighty to open for me the doors of His knowledge, and make my work a witness for me, and beneficial for the good of humanity.';
 }
